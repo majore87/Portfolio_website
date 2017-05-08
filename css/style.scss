@@ -1,6 +1,11 @@
-/* Variables */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+/* SASS Variables */
 
-$font-stack: Open sans, sans-serif;
+$font_stack: Lato, sans-serif;
+$green_color: #14bd4c;
+$darker_green: #0a8a35;
+$silver_color: #ecf0f1;
+$white_color: #FFF;
 
 /* General Style */
 
@@ -9,11 +14,42 @@ $font-stack: Open sans, sans-serif;
 }
 body {
 	margin: 0;
-	font-family: $font-stack;
+	font-family: $font_stack;
+}
+.button {
+	height: 50px;
+	width: 250px;
+	border-radius: 20px;
+	font-size: 25px;
+	font-weight: bold;
+	border: none;
+	box-shadow: 0 20px 30px 0 black;
 }
 
 /* Jumbotron */
 
 .jumbotron {
+	background-color: $green_color;
+	height: 100vh;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+	.text {
+		margin: 0;
+		color: white;
+		font-size: 40px;
+		font-weight: bold;
+		box-shadow: 2px 2px 5px #000000;
+	}
+	.button-technology {
+		background-color: $white_color;
+		color: $green_color;
 
+	}
+	.button-technology:hover {
+		background-color: black;
+		color: $white_color;
+		transition: .8s;
+		box-shadow: none;
+	}
 }

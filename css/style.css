@@ -1,12 +1,42 @@
-/* Variables */
+@import url("https://fonts.googleapis.com/css?family=Lato");
+/* SASS Variables */
 /* General Style */
 * {
   box-sizing: border-box; }
 
 body {
   margin: 0;
-  font-family: Open sans, sans-serif; }
+  font-family: Lato, sans-serif; }
+
+.button {
+  height: 50px;
+  width: 250px;
+  border-radius: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 20px 30px 0 black; }
 
 /* Jumbotron */
+.jumbotron {
+  background-color: #14bd4c;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  width: 100%; }
+  .jumbotron .text {
+    margin: 0;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px #000000; }
+  .jumbotron .button-technology {
+    background-color: #FFF;
+    color: #14bd4c; }
+  .jumbotron .button-technology:hover {
+    background-color: black;
+    color: #FFF;
+    transition: .8s;
+    box-shadow: none; }
 
 /*# sourceMappingURL=style.css.map */
