@@ -6,6 +6,7 @@ $green_color: #14bd4c;
 $darker_green: #0a8a35;
 $silver_color: #ecf0f1;
 $white_color: #FFF;
+$black-color: #000;
 
 /* General Style */
 
@@ -23,7 +24,40 @@ body {
 	font-size: 25px;
 	font-weight: bold;
 	border: none;
-	box-shadow: 0 20px 30px 0 black;
+	box-shadow: 0 20px 30px 0 $black-color;
+}
+
+/* Navigation */
+
+header{
+	height: 50px;
+	background-color: $white-color;
+	.menu {
+		max-width: 1200px;
+		margin: 0 auto;
+		ul {
+			display: flex;
+			justify-content: flex-end;
+			list-style: none;
+			li {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 150px;
+				cursor: pointer;
+				transition: 1s;
+				a {
+					text-decoration: none;
+					text-transform: uppercase;
+					color: $black_color;
+					font-weight: bold;
+					&:hover {
+					color: $green_color;
+					}
+				}
+			}
+		}
+	}
 }
 
 /* Jumbotron */
@@ -31,25 +65,23 @@ body {
 .jumbotron {
 	background-color: $green_color;
 	height: 100vh;
-	margin: 0;
+	margin: 0 auto;
 	text-align: center;
 	width: 100%;
 	.text {
-		margin: 0;
+		margin: 0 auto;
 		color: white;
 		font-size: 40px;
 		font-weight: bold;
-		box-shadow: 2px 2px 5px #000000;
 	}
 	.button-technology {
 		background-color: $white_color;
 		color: $green_color;
-
-	}
-	.button-technology:hover {
-		background-color: black;
-		color: $white_color;
-		transition: .8s;
-		box-shadow: none;
+		&:hover {
+			background-color: black;
+			color: $white_color;
+			transition: .8s;
+			box-shadow: none;
+		}
 	}
 }

@@ -15,28 +15,53 @@ body {
   font-size: 25px;
   font-weight: bold;
   border: none;
-  box-shadow: 0 20px 30px 0 black; }
+  box-shadow: 0 20px 30px 0 #000; }
+
+/* Navigation */
+header {
+  height: 50px;
+  background-color: #FFF; }
+  header .menu {
+    max-width: 1200px;
+    margin: 0 auto; }
+    header .menu ul {
+      display: flex;
+      justify-content: flex-end;
+      list-style: none; }
+      header .menu ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        cursor: pointer;
+        transition: 1s; }
+        header .menu ul li a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #000;
+          font-weight: bold; }
+          header .menu ul li a:hover {
+            color: #14bd4c; }
 
 /* Jumbotron */
 .jumbotron {
   background-color: #14bd4c;
   height: 100vh;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
   width: 100%; }
   .jumbotron .text {
-    margin: 0;
+    margin: 0 auto;
     color: white;
     font-size: 40px;
-    font-weight: bold;
-    box-shadow: 2px 2px 5px #000000; }
+    font-weight: bold; }
   .jumbotron .button-technology {
     background-color: #FFF;
     color: #14bd4c; }
-  .jumbotron .button-technology:hover {
-    background-color: black;
-    color: #FFF;
-    transition: .8s;
-    box-shadow: none; }
+    .jumbotron .button-technology:hover {
+      background-color: black;
+      color: #FFF;
+      transition: .8s;
+      box-shadow: none; }
 
 /*# sourceMappingURL=style.css.map */
