@@ -19,15 +19,25 @@ body {
 
 /* Navigation */
 header {
-  height: 50px;
   background-color: #FFF; }
   header .menu {
     max-width: 1200px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end; }
+    header .menu .portfolio {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      font-weight: bold;
+      font-size: 22px;
+      text-transform: uppercase; }
     header .menu ul {
       display: flex;
       justify-content: flex-end;
-      list-style: none; }
+      list-style: none;
+      margin: 0;
+      height: 50px; }
       header .menu ul li {
         display: flex;
         align-items: center;
@@ -37,24 +47,29 @@ header {
         transition: 1s; }
         header .menu ul li a {
           text-decoration: none;
-          text-transform: uppercase;
           color: #000;
           font-weight: bold; }
           header .menu ul li a:hover {
-            color: #14bd4c; }
+            color: #14bd4c;
+            font-size: 18px;
+            transition: 0.5s; }
 
 /* Jumbotron */
 .jumbotron {
   background-color: #14bd4c;
-  height: 100vh;
+  height: calc(100vh - 50px);
   margin: 0 auto;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .jumbotron .text {
-    margin: 0 auto;
     color: white;
     font-size: 40px;
     font-weight: bold; }
+    .jumbotron .text h1 {
+      margin: 0; }
   .jumbotron .button-technology {
     background-color: #FFF;
     color: #14bd4c; }

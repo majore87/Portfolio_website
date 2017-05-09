@@ -29,16 +29,27 @@ body {
 
 /* Navigation */
 
-header{
-	height: 50px;
+header {
 	background-color: $white-color;
 	.menu {
 		max-width: 1200px;
 		margin: 0 auto;
+		display: flex;
+		justify-content: flex-end;
+		.portfolio {
+			display: flex;
+			align-items: center;
+			flex: 1;
+			font-weight: bold;
+			font-size: 22px;
+			text-transform: uppercase;
+		}
 		ul {
 			display: flex;
 			justify-content: flex-end;
 			list-style: none;
+			margin: 0;
+			height: 50px;
 			li {
 				display: flex;
 				align-items: center;
@@ -48,11 +59,13 @@ header{
 				transition: 1s;
 				a {
 					text-decoration: none;
-					text-transform: uppercase;
+					// text-transform: uppercase;
 					color: $black_color;
 					font-weight: bold;
 					&:hover {
 					color: $green_color;
+					font-size: 18px;
+					transition: 0.5s;
 					}
 				}
 			}
@@ -64,15 +77,20 @@ header{
 
 .jumbotron {
 	background-color: $green_color;
-	height: 100vh;
+	height: calc(100vh - 50px);
 	margin: 0 auto;
 	text-align: center;
 	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	.text {
-		margin: 0 auto;
 		color: white;
 		font-size: 40px;
 		font-weight: bold;
+		h1 {
+			margin: 0;
+		}
 	}
 	.button-technology {
 		background-color: $white_color;
