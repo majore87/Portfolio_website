@@ -17,9 +17,16 @@ body {
   border: none;
   box-shadow: 0 20px 30px 0 #000; }
 
+.container {
+  margin-top: 50px; }
+
 /* Navigation */
 header {
-  background-color: #FFF; }
+  background-color: #FFF;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  top: 0; }
   header .menu {
     max-width: 1200px;
     margin: 0 auto;
@@ -57,7 +64,7 @@ header {
 /* Jumbotron */
 .jumbotron {
   background-color: #14bd4c;
-  height: calc(100vh - 50px);
+  height: 100vh;
   margin: 0 auto;
   text-align: center;
   width: 100%;
@@ -90,5 +97,10 @@ header {
         color: #FFF;
         transition: .8s;
         box-shadow: none; }
+
+/* Technology */
+.technology {
+  height: 100vh;
+  background-color: #e6e6e6; }
 
 /*# sourceMappingURL=style.css.map */
