@@ -130,3 +130,47 @@ header {
 	height: 100vh;
 	background-color: #e6e6e6;
 }
+
+/* Game */
+.span-label {
+	height: 50px;
+	width: 100px;
+	margin: 10px 10px;
+	border: 2px solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+.rock {
+	color: $white_color;
+	background-color: $black_color;
+	border: $black_color;
+}
+.paper {
+	color: $black_color;
+	background-color: $white_color;
+	border: $white_color;
+}
+.scissors {
+	color: $black_color;
+	background-color: $green_color;
+	border: $green_color;
+}
+.game {
+	height: 100vh;
+	background-color: #e6e6e6;
+	margin: 0;
+	> h1 {
+		text-align: center;
+		font-size: 40px;
+		margin: 0;
+		padding-top: 5%;
+	}
+	.container-title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+}
