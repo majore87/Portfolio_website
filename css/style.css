@@ -108,7 +108,8 @@ header {
   width: 100px;
   margin: 0 10px;
   border: 2px solid;
-  border-radius: 10px; }
+  border-radius: 10px;
+  font-weight: bold; }
 
 .rock {
   color: #FFF;
@@ -128,13 +129,28 @@ header {
 .game {
   height: 100vh;
   background-color: #e6e6e6;
-  margin: 0; }
+  margin: 0;
+  background-image: url("../images/girl_wall2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
   .game > h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     margin: 0;
-    padding-top: 5%; }
+    padding-top: 8%;
+    color: #FFF; }
   .game .container-title {
     flex-wrap: wrap; }
+    .game .container-title > h1 {
+      color: #FFF;
+      font-size: 30px; }
+  .game .new-game-container .newGameButton {
+    background-color: #14bd4c; }
+    .game .new-game-container .newGameButton:hover {
+      color: #FFF;
+      background-color: #000;
+      transition: .8s;
+      box-shadow: none; }
 
 /*# sourceMappingURL=style.css.map */

@@ -137,6 +137,7 @@ header {
 	margin: 0 10px;
 	border: 2px solid;
 	border-radius: 10px;
+	font-weight: bold;
 }
 .rock {
 	color: $white_color;
@@ -157,13 +158,33 @@ header {
 	height: 100vh;
 	background-color: #e6e6e6;
 	margin: 0;
+	background-image: url('../images/girl_wall2.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	> h1 {
 		text-align: center;
-		font-size: 40px;
+		font-size: 60px;
 		margin: 0;
-		padding-top: 5%;
+		padding-top: 8%;
+		color: $white_color;
 	}
 	.container-title {
 		flex-wrap: wrap;
+		> h1 {
+			color: $white_color;
+			font-size: 30px;
+		}
+	}
+	.new-game-container {
+		.newGameButton {
+			background-color: $green_color;
+			&:hover {
+				color: $white_color;
+				background-color: $black_color;
+				transition: .8s;
+				box-shadow: none;
+			}
+		}
 	}
 }
