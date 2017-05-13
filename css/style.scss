@@ -151,7 +151,7 @@ header {
 }
 .scissors {
 	color: $black_color;
-	background-color: $green_color;
+	background-color: #999999;
 	border: $green_color;
 }
 .game {
@@ -182,7 +182,7 @@ header {
 			background-color: $green_color;
 			&:hover {
 				color: $white_color;
-				background-color: $black_color;
+				background-color: #0d7830;
 				transition: .8s;
 				box-shadow: none;
 			}
