@@ -161,6 +161,7 @@ header {
 	background-image: url('../images/girl_wall2.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
+	margin-bottom: -80px;
 	background-size: 100% 100%;
 	> h1 {
 		text-align: center;
@@ -188,3 +189,42 @@ header {
 		}
 	}
 }
+footer {
+	background-color: $black_color;
+	color: $white_color;
+	.footer-container {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		justify-content: center;
+		max-width: 1200px;
+		height: 80px;
+		font-size: 15px;
+		font-weight: bold;
+		.copyright {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			flex-grow: 1;
+		}
+		.contact {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-grow: 1;
+		}
+		.phone {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-grow: 1;
+		}
+		.city {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			flex-grow: 1;
+		}
+	}
+}
+

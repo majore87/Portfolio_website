@@ -133,6 +133,7 @@ header {
   background-image: url("../images/girl_wall2.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: -80px;
   background-size: 100% 100%; }
   .game > h1 {
     text-align: center;
@@ -152,5 +153,38 @@ header {
       background-color: #000;
       transition: .8s;
       box-shadow: none; }
+
+footer {
+  background-color: #000;
+  color: #FFF; }
+  footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1200px;
+    height: 80px;
+    font-size: 15px;
+    font-weight: bold; }
+    footer .footer-container .copyright {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-grow: 1; }
+    footer .footer-container .contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1; }
+    footer .footer-container .phone {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1; }
+    footer .footer-container .city {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-grow: 1; }
 
 /*# sourceMappingURL=style.css.map */
