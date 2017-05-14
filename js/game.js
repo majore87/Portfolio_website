@@ -62,7 +62,7 @@ function newGame() {
 		setGameElements();
 
 		playerNameElem.innerHTML = player.name;
-		// setGamePoints();//
+		setGamePoints();
 	}
 }
 
@@ -79,9 +79,57 @@ var playerPickElem = document.getElementById('js-playerPick'),
 	computerResultElem = document.getElementById('js-computerResult');
 
 //Function for set description for computer and players pick
-
 function playerPick(playerPick) {
 	var computerPick = getComputerPick();
 	playerPickElem.innerHTML = playerPick;
 	computerPickElem.innerHTML = computerPick;
+
+	checkRoundWinner(playerPick, computerPick);
 }
+
+// Winner logic, default player is a winner and function check this.
+function checkRoundWinner(playerPick, computerPick) {
+	playerResultElem = computerResultElem = '';
+
+	var winnerIs = 'player';
+	if (playerPick == computerPick) {
+		winnerIs = 'none';
+	}
+	else if (
+		(playerPick == 'Scissors' && computerPick == 'Rock') ||
+		(playerPick == 'Rock' && computerPick == 'Paper') ||
+		(playerPick == 'Paper' && computerPick == 'Scissors')) {
+		winnerIs = 'computer';
+	}
+
+	if (winnerIs == 'player') {
+		playerResultElem.innerHTML = 'Win!';
+		player.score++;
+	}
+	else if (winnerIs == 'computer') {
+		computerResultElem.innerHTML = 'Win!';
+		computer.score++;
+	}
+	setGamePoints();
+}
+//Update score for player and computer
+function setGamePoints() {
+	playerPointsElem.innerHTML = player.score;
+	computerPointsElem.innerHTML = computer.score;
+
+	endGame();
+}
+
+//End Game alerts when computer or player receive 10 points
+function endGame() {
+	if (player.score > 9 || computer.score > 9) {
+			if (player.score > computer.score) {
+				alert("Your score: " + player.score + " points!" + " You are like a Neo in Matrix! You really can defeat the program.");
+			}
+			else
+				alert("You have failed! Your score: " + player.score + " points." + " Program will launch Skynet in 3 seconds...");
+		gameState = 'ended';
+		setGameElements();
+	}
+}
+

@@ -7,6 +7,7 @@ $darker_green: #0a8a35;
 $silver_color: #ecf0f1;
 $white_color: #FFF;
 $black-color: #000;
+$section_grey: #e6e6e6;
 
 /* General Style */
 
@@ -130,9 +131,13 @@ header {
 
 /* Technology */
 
-.technology {
+.skills {
 	height: 100vh;
-	background-color: #e6e6e6;
+	background-color: $section_grey;
+}
+.projects {
+	height: 100vh;
+	background-color: #bdc3c7;
 }
 
 /* Game */
@@ -251,6 +256,7 @@ header {
 				display: flex;
 				justify-content: flex-start;
 				flex-grow: 1;
+				margin: 10px 0;
 			}
 			.computerResult {
 				display: flex;
