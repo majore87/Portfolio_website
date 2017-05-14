@@ -25,6 +25,11 @@ body {
 	font-weight: bold;
 	border: none;
 	box-shadow: 0 20px 30px 0 $black-color;
+	cursor: pointer;
+}
+.activeButton:active {
+	vertical-align: top;
+	padding: 8px 13px 6px;
 }
 .container {
 	margin-top: 50px;
@@ -184,6 +189,18 @@ header {
 				color: $white_color;
 				background-color: #0d7830;
 				transition: .8s;
+				box-shadow: none;
+			}
+		}
+	}
+	.player-pick-container {
+		flex-wrap: wrap;
+		.pickButton {
+			margin: 5px 10px;
+			&:hover {
+				background-color: $black_color;
+				color: $white_color;
+				transition: .6s;
 				box-shadow: none;
 			}
 		}

@@ -29,7 +29,7 @@
 					<div class="text">
 					<h1>Piotr Wójcik</h1>
 					<p>Continuous learning Front-end Developer</p>
-					<button class="button button-technology">Skills</button>
+					<a href="#technology"><button class="button button-technology">Skills</button></a>
 					</div>
 				</div>
 			</section>
@@ -49,9 +49,16 @@
 						<span class="span-label scissors flex-center">Scissors</span>
 					</div>
 
-					<div id="ja-newGameElement" class="new-game-container container flex-center">
-						<button id="js-newGameButton" class="button newGameButton">New Game</button>
+					<div id="js-newGameElement" class="new-game-container container flex-center">
+						<button id="js-newGameButton" class="button newGameButton activeButton">New Game</button>
 					</div>
+
+					<div id="js-playerPickElement" class="player-pick-container container flex-center">
+						<button id="js-playerPick_rock" class="button pickButton activeButton"><i class="fa fa-hand-rock-o" aria-hidden="true"></i>Rock</button>
+						<button id="js-playerPick_paper" class="button pickButton activeButton"><i class="fa fa-hand-paper-o" aria-hidden="true"></i>Paper</button>
+						<button id="js-playerPick_scissors" class="button pickButton activeButton"><i class="fa fa-hand-scissors-o" aria-hidden="true"></i>Scissors</button>
+					</div>
+
 
 
 			</section>
@@ -71,6 +78,7 @@
 		<script src="js/particles.js"></script>
 		<script src="js/app.js"></script>
 		<script type="js/javascript" src="js/script.js"></script>
+		<script type="js/javascript" src="js/game.js"></script>
 	</body>
 
 </html>
