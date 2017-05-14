@@ -71,7 +71,7 @@ header {
             font-size: 18px;
             transition: 0.5s; }
 
-/* Jumbotron */
+/* Jumbotron section*/
 .jumbotron {
   background-color: #14bd4c;
   height: 100vh;
@@ -102,16 +102,17 @@ header {
         transition: .8s;
         box-shadow: none; }
 
-/* Technology */
+/* Technology section */
 .skills {
   height: 100vh;
   background-color: #e6e6e6; }
 
+/* Projects section */
 .projects {
   height: 100vh;
   background-color: #bdc3c7; }
 
-/* Game */
+/* Game section */
 .span-label {
   height: 40px;
   width: 100px;
@@ -148,10 +149,12 @@ header {
     text-align: center;
     font-size: 60px;
     margin: 0;
-    padding-top: 8%;
+    margin-bottom: 150px;
+    padding-top: 5%;
     color: #FFF; }
   .game .container-title {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin: 100px auto; }
     .game .container-title > h1 {
       color: #FFF;
       font-size: 30px; }
@@ -163,7 +166,8 @@ header {
       transition: .8s;
       box-shadow: none; }
   .game .player-pick-container {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin: 70px 0; }
     .game .player-pick-container .pickButton {
       margin: 5px 10px; }
       .game .player-pick-container .pickButton:hover {
@@ -177,7 +181,7 @@ header {
     font-weight: bold; }
     .game .results .row {
       margin: 0 auto;
-      width: 60vw;
+      width: 40vw;
       font-weight: bold;
       display: flex;
       flex-direction: row;
@@ -214,7 +218,8 @@ header {
       .game .results .row .computerResult {
         display: flex;
         justify-content: flex-end;
-        flex-grow: 1; }
+        flex-grow: 1;
+        margin: 10px 0; }
       .game .results .row .playerChoice, .game .results .row .computerChoice, .game .results .row .playerResult, .game .results .row .computerResult {
         font-size: 25px;
         font-weight: normal; }

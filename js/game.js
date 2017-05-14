@@ -3,7 +3,7 @@ var newGameBtn = document.getElementById('js-newGameButton'),
 	newGameElem = document.getElementById('js-newGameElement'),
 	pickElem = document.getElementById('js-playerPickElement'),
 	resultsElem = document.getElementById('js-resultsTableElement');
-	console.log(newGameBtn);
+	containerTitle = document.getElementById('js-containerTitle');
 
 //New game listener
 newGameBtn.addEventListener('click', newGame);
@@ -38,6 +38,7 @@ function setGameElements() {
 	switch(gameState) {
 		case 'started':
 			newGameElem.style.display = 'none';
+			containerTitle.style.display = 'none';
 			pickElem.style.display = 'flex';
 			resultsElem.style.display = 'block';
 		break;

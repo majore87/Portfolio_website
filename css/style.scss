@@ -91,7 +91,7 @@ header {
 	}
 }
 
-/* Jumbotron */
+/* Jumbotron section*/
 
 .jumbotron {
 	background-color: $green_color;
@@ -129,18 +129,20 @@ header {
 	}
 }
 
-/* Technology */
+/* Technology section */
 
 .skills {
 	height: 100vh;
 	background-color: $section_grey;
 }
+
+/* Projects section */
 .projects {
 	height: 100vh;
 	background-color: #bdc3c7;
 }
 
-/* Game */
+/* Game section */
 .span-label {
 	height: 40px;
 	width: 100px;
@@ -177,11 +179,13 @@ header {
 		text-align: center;
 		font-size: 60px;
 		margin: 0;
-		padding-top: 8%;
+		margin-bottom: 150px;
+		padding-top: 5%;
 		color: $white_color;
 	}
 	.container-title {
 		flex-wrap: wrap;
+		margin: 100px auto;
 		> h1 {
 			color: $white_color;
 			font-size: 30px;
@@ -200,6 +204,7 @@ header {
 	}
 	.player-pick-container {
 		flex-wrap: wrap;
+		margin: 70px 0;
 		.pickButton {
 			margin: 5px 10px;
 			&:hover {
@@ -216,7 +221,7 @@ header {
 		font-weight: bold;
 		.row {
 			margin: 0 auto;
-			width: 60vw;
+			width: 40vw;
 			font-weight: bold;
 			display: flex;
 			flex-direction: row;
@@ -262,6 +267,7 @@ header {
 				display: flex;
 				justify-content: flex-end;
 				flex-grow: 1;
+				margin: 10px 0;
 			}
 			.playerChoice, .computerChoice, .playerResult, .computerResult {
 				font-size: 25px;
