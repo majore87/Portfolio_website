@@ -167,6 +167,52 @@ header {
         color: #FFF;
         transition: .6s;
         box-shadow: none; }
+  .game .results {
+    font-size: 30px;
+    color: #FFF;
+    font-weight: bold; }
+    .game .results .row {
+      margin: 0 auto;
+      width: 60vw;
+      font-weight: bold;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .game .results .row .player {
+        display: flex;
+        justify-content: flex-start;
+        flex-grow: 1; }
+        .game .results .row .player :nth-child(2) {
+          margin: 0 0 10px 10px; }
+      .game .results .row .VS {
+        display: flex;
+        justify-content: center;
+        flex-grow: 2; }
+      .game .results .row .computer {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1; }
+        .game .results .row .computer :nth-child(2) {
+          margin: 0 0 10px 10px; }
+      .game .results .row .playerChoice {
+        display: flex;
+        justify-content: flex-start;
+        flex-grow: 1; }
+      .game .results .row .computerChoice {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1; }
+      .game .results .row .playerResult {
+        display: flex;
+        justify-content: flex-start;
+        flex-grow: 1; }
+      .game .results .row .computerResult {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1; }
+      .game .results .row .playerChoice, .game .results .row .computerChoice, .game .results .row .playerResult, .game .results .row .computerResult {
+        font-size: 25px;
+        font-weight: normal; }
 
 footer {
   background-color: #000;

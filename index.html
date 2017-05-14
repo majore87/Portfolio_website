@@ -16,7 +16,7 @@
 				<div class="portfolio">Portfolio</div>
 				<ul>
 					<li><a href="#home">Home</a></li>
-					<li><a href="#technology">Technology</a></li>
+					<li><a href="#skills">Skills</a></li>
 					<li><a href="#projects">Projects</a></li>
 					<li><a href="#game">Game</a></li>
 				</ul>
@@ -29,7 +29,7 @@
 					<div class="text">
 					<h1>Piotr Wójcik</h1>
 					<p>Continuous learning Front-end Developer</p>
-					<a href="#technology"><button class="button button-technology">Skills</button></a>
+					<a href="#skills"><button class="button button-technology">Skills</button></a>
 					</div>
 				</div>
 			</section>
@@ -42,27 +42,57 @@
 
 			<section id="game" class="game container">
 				<h1>Are You bored at work?</h1>
-					<div class="container-title container flex-center">
-						<h1>Let's play the game</h1>
-						<span class="span-label rock flex-center">Rock</span>
-						<span class="span-label paper flex-center">Paper</span>
-						<span class="span-label scissors flex-center">Scissors</span>
+				<div class="container-title container flex-center">
+					<h1>Let's play the game</h1>
+					<span class="span-label rock flex-center">Rock</span>
+					<span class="span-label paper flex-center">Paper</span>
+					<span class="span-label scissors flex-center">Scissors</span>
+				</div>
+
+				<div id="js-newGameElement" class="new-game-container container flex-center">
+					<button id="js-newGameButton" class="button newGameButton activeButton">New Game</button>
+				</div>
+
+				<div id="js-playerPickElement" class="player-pick-container container flex-center">
+					<button id="js-playerPick_rock" class="button pickButton activeButton"><i class="fa fa-hand-rock-o" aria-hidden="true"></i>Rock</button>
+					<button id="js-playerPick_paper" class="button pickButton activeButton"><i class="fa fa-hand-paper-o" aria-hidden="true"></i>Paper</button>
+					<button id="js-playerPick_scissors" class="button pickButton activeButton"><i class="fa fa-hand-scissors-o" aria-hidden="true"></i>Scissors</button>
+				</div>
+
+				<div id="js-resultsTableElement" class="container <!--flex-center--> results">
+					<div class="row">
+						<div class="player">
+							<span id="js-playerPoints">0</span>
+							<span id="js-playerName">Player name</span>
+						</div>
+						<div class="vs">
+							<span class="VS">VS</span>
+						</div>
+						<div class="computer">
+							<span id="js-computerPoints">0</span>
+							<span>Computer</span>
+						</div>
 					</div>
 
-					<div id="js-newGameElement" class="new-game-container container flex-center">
-						<button id="js-newGameButton" class="button newGameButton activeButton">New Game</button>
+					<div class="row">
+						<div class="playerChoice">
+							<span id="js-playerPick">Player choice</span>
+						</div>
+						<div class="computerChoice">
+							<span id="js-computerPick">Computer choice</span>
+						</div>
 					</div>
 
-					<div id="js-playerPickElement" class="player-pick-container container flex-center">
-						<button id="js-playerPick_rock" class="button pickButton activeButton"><i class="fa fa-hand-rock-o" aria-hidden="true"></i>Rock</button>
-						<button id="js-playerPick_paper" class="button pickButton activeButton"><i class="fa fa-hand-paper-o" aria-hidden="true"></i>Paper</button>
-						<button id="js-playerPick_scissors" class="button pickButton activeButton"><i class="fa fa-hand-scissors-o" aria-hidden="true"></i>Scissors</button>
+					<div class="row">
+						<div class="playerResult">
+							<span id="js-playerPick">Player result</span>
+						</div>
+						<div class="computerResult">
+							<span id="js-playerPick">Computer result</span>
+						</div>
 					</div>
-
-
-
+				</div>
 			</section>
-
 			<footer>
 				<div class="footer-container">
 					<div class="copyright">&copy;2017 Wójcik Company</div>
@@ -73,12 +103,10 @@
 			</footer>
 
 		</main>
-
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js/particles.js"></script>
 		<script src="js/app.js"></script>
 		<script type="js/javascript" src="js/script.js"></script>
 		<script type="js/javascript" src="js/game.js"></script>
 	</body>
-
 </html>

@@ -205,6 +205,64 @@ header {
 			}
 		}
 	}
+	.results {
+		font-size: 30px;
+		color: $white_color;
+		font-weight: bold;
+		.row {
+			margin: 0 auto;
+			width: 60vw;
+			font-weight: bold;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			.player {
+				display: flex;
+				justify-content: flex-start;
+				flex-grow: 1;
+				:nth-child(2) {
+					margin: 0 0 10px 10px;
+				}
+			}
+			.VS {
+				display: flex;
+				justify-content: center;
+				flex-grow: 2;
+			}
+			.computer {
+				display: flex;
+				justify-content: flex-end;
+				flex-grow: 1;
+				:nth-child(2) {
+					margin: 0 0 10px 10px;
+				}
+			}
+			.playerChoice {
+				display: flex;
+				justify-content: flex-start;
+				flex-grow: 1;
+			}
+			.computerChoice {
+				display: flex;
+				justify-content: flex-end;
+				flex-grow: 1;
+			}
+			.playerResult {
+				display: flex;
+				justify-content: flex-start;
+				flex-grow: 1;
+			}
+			.computerResult {
+				display: flex;
+				justify-content: flex-end;
+				flex-grow: 1;
+			}
+			.playerChoice, .computerChoice, .playerResult, .computerResult {
+				font-size: 25px;
+				font-weight: normal;
+			}
+		}
+	}
 }
 footer {
 	background-color: $black_color;
