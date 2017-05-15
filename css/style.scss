@@ -77,7 +77,6 @@ header {
 				transition: 1s;
 				a {
 					text-decoration: none;
-					// text-transform: uppercase;
 					color: $black_color;
 					font-weight: bold;
 					&:hover {
@@ -142,15 +141,16 @@ header {
 	// justify-content: center;
 	.flex-row {
 		display: flex;
-		flex-wrap: wrap;
 		max-width: 1200px;
+		// max-width: 100%;
 		margin: 0 auto;
 		.gallery {
-			max-width: 100%;
 			display: flex;
-			// flex-wrap: no-wrap;
 			flex-direction: row;
 			.image1 {
+				// display: flex;
+				// justify-content: flex-start;
+				// flex-grow: 1;
 				img {
 					width: 100%;
 				}
@@ -176,6 +176,61 @@ header {
 				// width: 25%;
 				// margin: 0 30px;
 				// }
+		}
+	}
+	.progress-container {
+		display: flex;
+		flex-direction: row;
+		max-width: 1200px;
+		margin: 0 auto;
+		width: 100%;
+		.progress {
+			background-color: #BDC3C7;
+			margin: 20px 10px;
+			display: flex;
+			align-items: center;
+			font-size: 30px;
+			font-weight: bold;
+			width: 100%;
+			cursor: pointer;
+			box-shadow: 0 20px 30px 0 $black-color;
+			color: $white-color;
+			.html {
+				width: 0.1%;
+				background-color: $green_color;
+				text-align: right;
+				&:hover {
+					background-color: #F16529;
+					box-shadow: none;
+					color: $black-color;
+					transition: .8s;
+					width: 30%;
+				}
+			}
+			.css3 {
+				width: 30%;
+				background-color: $green_color;
+				text-align: right;
+				&:hover {
+					background-color: #369CD6;
+					color: $black-color;
+					transition: .8s;
+				}
+			}
+			.js {
+				width: 10%;
+				background-color: $green_color;
+				&:hover {
+					background-color: #F7DF1E;
+					color: $black-color;
+					transition: .8s;
+				}
+			}
+			&:hover {
+				transition: .8s;
+				box-shadow: none;
+				background-color: #999999;
+			}
 		}
 	}
 }
