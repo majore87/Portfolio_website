@@ -129,14 +129,59 @@ header {
 	}
 }
 
-/* Technology section */
+/* Skills section */
+
+.img-html {background-image: url("../images/HTML5.png");}
+.img-css3 {background-image: url("../images/CSS3.png");}
+.img-js {background-image: url("../images/JS.png");}
 
 .skills {
 	height: 100vh;
 	background-color: $section_grey;
+	// display: flex;
+	// justify-content: center;
+	.flex-row {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 1200px;
+		margin: 0 auto;
+		.gallery {
+			max-width: 100%;
+			display: flex;
+			// flex-wrap: no-wrap;
+			flex-direction: row;
+			.image1 {
+				img {
+					width: 100%;
+				}
+			}
+			.image2 {
+				// display: flex;
+				// justify-content: center;
+				// flex-grow: 1;
+				img {
+					width: 100%;
+				}
+			}
+			.image3 {
+				// display: flex;
+				// justify-content: flex-end;
+				// flex-grow: 1;
+				img {
+					width: 100%;
+				}
+			}
+				// margin: 0 30px;
+				// img {
+				// width: 25%;
+				// margin: 0 30px;
+				// }
+		}
+	}
 }
 
 /* Projects section */
+
 .projects {
 	height: 100vh;
 	background-color: #bdc3c7;
