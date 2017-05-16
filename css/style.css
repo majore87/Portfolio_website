@@ -147,13 +147,12 @@ header {
       color: #FFF; }
       .skills .progress-container .progress .html {
         width: 0.1%;
-        background-color: #14bd4c;
         text-align: right; }
         .skills .progress-container .progress .html:hover {
           background-color: #F16529;
           box-shadow: none;
           color: #000;
-          transition: .8s;
+          transition: 1s;
           width: 30%; }
       .skills .progress-container .progress .css3 {
         width: 30%;

@@ -197,13 +197,13 @@ header {
 			color: $white-color;
 			.html {
 				width: 0.1%;
-				background-color: $green_color;
+				// background-color: $green_color;
 				text-align: right;
 				&:hover {
 					background-color: #F16529;
 					box-shadow: none;
 					color: $black-color;
-					transition: .8s;
+					transition: 1s;
 					width: 30%;
 				}
 			}
@@ -234,6 +234,7 @@ header {
 		}
 	}
 }
+
 
 /* Projects section */
 
