@@ -114,65 +114,51 @@ header {
 
 .skills {
   height: 100vh;
-  background-color: #e6e6e6; }
+  background-color: #FFF; }
   .skills .flex-row {
     display: flex;
     max-width: 1200px;
     margin: 0 auto; }
-    .skills .flex-row .gallery {
+    .skills .flex-row .progress-container {
       display: flex;
-      flex-direction: row; }
-      .skills .flex-row .gallery .image1 img {
+      flex-direction: column;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%; }
+      .skills .flex-row .progress-container .image-class {
+        cursor: pointer; }
+      .skills .flex-row .progress-container .image1 img {
         width: 100%; }
-      .skills .flex-row .gallery .image2 img {
+      .skills .flex-row .progress-container .image2 img {
         width: 100%; }
-      .skills .flex-row .gallery .image3 img {
+      .skills .flex-row .progress-container .image3 img {
         width: 100%; }
-  .skills .progress-container {
-    display: flex;
-    flex-direction: row;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%; }
-    .skills .progress-container .progress {
-      background-color: #BDC3C7;
-      margin: 20px 10px;
-      display: flex;
-      align-items: center;
-      font-size: 30px;
-      font-weight: bold;
-      width: 100%;
-      cursor: pointer;
-      box-shadow: 0 20px 30px 0 #000;
-      color: #FFF; }
-      .skills .progress-container .progress .html {
-        width: 0.1%;
-        text-align: right; }
-        .skills .progress-container .progress .html:hover {
-          background-color: #F16529;
-          box-shadow: none;
-          color: #000;
-          transition: 1s;
-          width: 30%; }
-      .skills .progress-container .progress .css3 {
-        width: 30%;
-        background-color: #14bd4c;
-        text-align: right; }
-        .skills .progress-container .progress .css3:hover {
-          background-color: #369CD6;
-          color: #000;
-          transition: .8s; }
-      .skills .progress-container .progress .js {
-        width: 10%;
-        background-color: #14bd4c; }
-        .skills .progress-container .progress .js:hover {
-          background-color: #F7DF1E;
-          color: #000;
-          transition: .8s; }
-      .skills .progress-container .progress:hover {
-        transition: .8s;
-        box-shadow: none;
-        background-color: #999999; }
+      .skills .flex-row .progress-container .progress {
+        background-color: #DDDDDD;
+        margin: 20px 10px;
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bold;
+        width: 100%;
+        cursor: pointer;
+        box-shadow: 0 20px 30px 0 #000;
+        color: #DDDDDD; }
+        .skills .flex-row .progress-container .progress .html {
+          width: 0.1%;
+          text-align: right;
+          display: flex; }
+
+.skills .flex-row .progress-container .image1:hover + .progress .html {
+  background-color: #F16529;
+  box-shadow: none;
+  color: #000;
+  transition: 1s;
+  width: 30%; }
+
+.skills .flex-row .progress-container .image1:hover + .progress {
+  box-shadow: none;
+  transition: 1s; }
 
 /* Projects section */
 .projects {

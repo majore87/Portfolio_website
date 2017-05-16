@@ -6,7 +6,7 @@ $green_color: #14bd4c;
 $darker_green: #0a8a35;
 $silver_color: #ecf0f1;
 $white_color: #FFF;
-$black-color: #000;
+$black_color: #000;
 $section_grey: #e6e6e6;
 
 /* General Style */
@@ -25,7 +25,7 @@ body {
 	font-size: 25px;
 	font-weight: bold;
 	border: none;
-	box-shadow: 0 20px 30px 0 $black-color;
+	box-shadow: 0 20px 30px 0 $black_color;
 	cursor: pointer;
 }
 .activeButton:active {
@@ -44,7 +44,7 @@ body {
 /* Navigation */
 
 header {
-	background-color: $white-color;
+	background-color: $white_color;
 	position: fixed;
 	width: 100%;
 	overflow: hidden;
@@ -136,104 +136,132 @@ header {
 
 .skills {
 	height: 100vh;
-	background-color: $section_grey;
-	// display: flex;
-	// justify-content: center;
+	background-color: $white_color;
 	.flex-row {
 		display: flex;
 		max-width: 1200px;
-		// max-width: 100%;
 		margin: 0 auto;
-		.gallery {
-			display: flex;
-			flex-direction: row;
-			.image1 {
-				// display: flex;
-				// justify-content: flex-start;
-				// flex-grow: 1;
-				img {
+			.progress-container {
+				display: flex;
+				flex-direction: column;
+				max-width: 1200px;
+				margin: 0 auto;
+				width: 100%;
+				.image-class {
+					cursor: pointer;
+				}
+				.image1 {
+					img {
+						width: 100%;
+					}
+				}
+				.image2 {
+					img {
+						width: 100%;
+					}
+				}
+				.image3 {
+					img {
+						width: 100%;
+					}
+				}
+				.progress {
+					background-color: #DDDDDD;
+					margin: 20px 10px;
+					display: flex;
+					align-items: center;
+					font-size: 30px;
+					font-weight: bold;
 					width: 100%;
+					cursor: pointer;
+					box-shadow: 0 20px 30px 0 $black_color;
+					color: #DDDDDD;
+					.html {
+						width: 0.1%;
+						text-align: right;
+						display: flex;
+					}
 				}
-			}
-			.image2 {
-				// display: flex;
-				// justify-content: center;
-				// flex-grow: 1;
-				img {
-					width: 100%;
-				}
-			}
-			.image3 {
-				// display: flex;
-				// justify-content: flex-end;
-				// flex-grow: 1;
-				img {
-					width: 100%;
-				}
-			}
-				// margin: 0 30px;
-				// img {
-				// width: 25%;
-				// margin: 0 30px;
-				// }
-		}
-	}
-	.progress-container {
-		display: flex;
-		flex-direction: row;
-		max-width: 1200px;
-		margin: 0 auto;
-		width: 100%;
-		.progress {
-			background-color: #BDC3C7;
-			margin: 20px 10px;
-			display: flex;
-			align-items: center;
-			font-size: 30px;
-			font-weight: bold;
-			width: 100%;
-			cursor: pointer;
-			box-shadow: 0 20px 30px 0 $black-color;
-			color: $white-color;
-			.html {
-				width: 0.1%;
-				// background-color: $green_color;
-				text-align: right;
-				&:hover {
-					background-color: #F16529;
-					box-shadow: none;
-					color: $black-color;
-					transition: 1s;
-					width: 30%;
-				}
-			}
-			.css3 {
-				width: 30%;
-				background-color: $green_color;
-				text-align: right;
-				&:hover {
-					background-color: #369CD6;
-					color: $black-color;
-					transition: .8s;
-				}
-			}
-			.js {
-				width: 10%;
-				background-color: $green_color;
-				&:hover {
-					background-color: #F7DF1E;
-					color: $black-color;
-					transition: .8s;
-				}
-			}
-			&:hover {
-				transition: .8s;
-				box-shadow: none;
-				background-color: #999999;
 			}
 		}
 	}
+
+.skills .flex-row .progress-container .image1:hover + .progress .html {
+	background-color: #F16529;
+	box-shadow: none;
+	color: $black-color;
+	transition: 1s;
+	width: 30%;
 }
+.skills .flex-row .progress-container .image1:hover + .progress {
+	box-shadow: none;
+	transition: 1s;
+}
+
+
+
+
+					// margin: 0 30px;
+					// img {
+					// width: 25%;
+					// margin: 0 30px;
+					// }
+	// .progress-container {
+	// 	display: flex;
+	// 	flex-direction: row;
+	// 	max-width: 1200px;
+	// 	margin: 0 auto;
+	// 	width: 100%;
+	// 	.progress {
+	// 		background-color: #BDC3C7;
+	// 		margin: 20px 10px;
+	// 		display: flex;
+	// 		align-items: center;
+	// 		font-size: 30px;
+	// 		font-weight: bold;
+	// 		width: 100%;
+	// 		cursor: pointer;
+	// 		box-shadow: 0 20px 30px 0 $black-color;
+	// 		color: $white-color;
+	// 		.html {
+	// 			width: 0.1%;
+	// 			// background-color: $green_color;
+	// 			text-align: right;
+	// 			&:hover {
+	// 				background-color: #F16529;
+	// 				box-shadow: none;
+	// 				color: $black-color;
+	// 				transition: 1s;
+	// 				width: 30%;
+	// 			}
+	// 		}
+// 			.css3 {
+// 				width: 30%;
+// 				background-color: $green_color;
+// 				text-align: right;
+// 				&:hover {
+// 					background-color: #369CD6;
+// 					color: $black-color;
+// 					transition: .8s;
+// 				}
+// 			}
+// 			.js {
+// 				width: 10%;
+// 				background-color: $green_color;
+// 				&:hover {
+// 					background-color: #F7DF1E;
+// 					color: $black-color;
+// 					transition: .8s;
+// 				}
+// 			}
+// 			&:hover {
+// 				transition: .8s;
+// 				box-shadow: none;
+// 				background-color: #999999;
+// 			}
+// 		}
+// 	}
+// }
 
 
 /* Projects section */
