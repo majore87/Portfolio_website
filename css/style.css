@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
+/*------------------------------*/
 /* SASS Variables */
+/*------------------------------*/
+/*------------------------------*/
 /* General Style */
+/*------------------------------*/
 * {
   box-sizing: border-box; }
 
@@ -30,7 +34,9 @@ body {
   justify-content: center;
   align-items: center; }
 
+/*------------------------------*/
 /* Navigation */
+/*------------------------------*/
 header {
   background-color: #FFF;
   position: fixed;
@@ -71,7 +77,9 @@ header {
             font-size: 18px;
             transition: 0.5s; }
 
+/*------------------------------*/
 /* Jumbotron section*/
+/*------------------------------*/
 .jumbotron {
   background-color: #14bd4c;
   height: 100vh;
@@ -102,7 +110,9 @@ header {
         transition: .8s;
         box-shadow: none; }
 
+/*------------------------------*/
 /* Skills section */
+/*------------------------------*/
 .img-html {
   background-image: url("../images/HTML5.png"); }
 
@@ -141,31 +151,79 @@ header {
         font-size: 30px;
         font-weight: bold;
         width: 100%;
-        cursor: pointer;
         box-shadow: 0 20px 30px 0 #000;
         color: #DDDDDD; }
         .skills .flex-row .progress-container .progress .html {
-          width: 0.1%;
-          text-align: right;
-          display: flex; }
+          width: 0.1%; }
+        .skills .flex-row .progress-container .progress .css3 {
+          width: 0.1%; }
+        .skills .flex-row .progress-container .progress .js {
+          width: 0.1%; }
+
+/*------------------------------*/
+/* HOVER TECHNOLOGY */
+/*------------------------------*/
+/* Hover HTML */
+.skills .flex-row .progress-container .image1:hover {
+  transform: scale(1.1);
+  transition: 1s; }
 
 .skills .flex-row .progress-container .image1:hover + .progress .html {
   background-color: #F16529;
   box-shadow: none;
   color: #000;
   transition: 1s;
-  width: 30%; }
+  width: 30%;
+  text-align: right; }
 
 .skills .flex-row .progress-container .image1:hover + .progress {
   box-shadow: none;
   transition: 1s; }
 
+/* Hover CSS3 */
+.skills .flex-row .progress-container .image2:hover {
+  transform: scale(1.1);
+  transition: 1s; }
+
+.skills .flex-row .progress-container .image2:hover + .progress .css3 {
+  background-color: #369CD6;
+  box-shadow: none;
+  color: #000;
+  transition: 1s;
+  width: 30%;
+  text-align: right; }
+
+.skills .flex-row .progress-container .image2:hover + .progress {
+  box-shadow: none;
+  transition: 1s; }
+
+/* Hover JS */
+.skills .flex-row .progress-container .image3:hover {
+  transform: scale(1.1);
+  transition: 1s; }
+
+.skills .flex-row .progress-container .image3:hover + .progress .js {
+  background-color: #F7DF1E;
+  box-shadow: none;
+  color: #000;
+  transition: 1s;
+  width: 10%;
+  text-align: right; }
+
+.skills .flex-row .progress-container .image3:hover + .progress {
+  box-shadow: none;
+  transition: 1s; }
+
+/*------------------------------*/
 /* Projects section */
+/*------------------------------*/
 .projects {
   height: 100vh;
   background-color: #bdc3c7; }
 
+/*------------------------------*/
 /* Game section */
+/*------------------------------*/
 .span-label {
   height: 40px;
   width: 100px;
@@ -277,6 +335,9 @@ header {
         font-size: 25px;
         font-weight: normal; }
 
+/*------------------------------*/
+/* Footer */
+/*------------------------------*/
 footer {
   background-color: #000;
   color: #FFF; }
