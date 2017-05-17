@@ -124,16 +124,21 @@ header {
 
 .skills {
   height: 100vh;
-  background-color: #FFF; }
+  background-color: #bdc3c7;
+  position: relative; }
   .skills .flex-row {
     display: flex;
-    max-width: 1200px;
-    margin: 0 auto; }
+    max-width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    margin-top: -300px;
+    left: 0;
+    right: 0; }
     .skills .flex-row .progress-container {
       display: flex;
       flex-direction: column;
-      max-width: 1200px;
-      margin: 0 auto;
+      margin: 0 20px;
       width: 100%; }
       .skills .flex-row .progress-container .image-class {
         cursor: pointer; }
@@ -145,7 +150,8 @@ header {
         width: 100%; }
       .skills .flex-row .progress-container .progress {
         background-color: #DDDDDD;
-        margin: 20px 10px;
+        box-sizing: border-box;
+        margin: 20px auto;
         display: flex;
         align-items: center;
         font-size: 30px;
@@ -159,6 +165,18 @@ header {
           width: 0.1%; }
         .skills .flex-row .progress-container .progress .js {
           width: 0.1%; }
+  .skills .career-goal {
+    position: absolute;
+    bottom: 10%;
+    max-width: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0; }
+    .skills .career-goal p {
+      color: #000;
+      font-weight: bold;
+      font-size: 30px;
+      text-align: center; }
 
 /*------------------------------*/
 /* HOVER TECHNOLOGY */
@@ -199,7 +217,7 @@ header {
 
 /* Hover JS */
 .skills .flex-row .progress-container .image3:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: 1s; }
 
 .skills .flex-row .progress-container .image3:hover + .progress .js {
@@ -219,7 +237,7 @@ header {
 /*------------------------------*/
 .projects {
   height: 100vh;
-  background-color: #bdc3c7; }
+  background-color: #14bd4c; }
 
 /*------------------------------*/
 /* Game section */

@@ -147,16 +147,21 @@ header {
 
 .skills {
 	height: 100vh;
-	background-color: $white_color;
+	background-color: #bdc3c7;
+	position: relative;
 	.flex-row {
 		display: flex;
-		max-width: 1200px;
+		max-width: 80%;
 		margin: 0 auto;
+		position: absolute;
+		top: 50%;
+		margin-top: -300px;
+		left: 0;
+		right: 0;
 			.progress-container {
 				display: flex;
 				flex-direction: column;
-				max-width: 1200px;
-				margin: 0 auto;
+				margin: 0 20px;
 				width: 100%;
 				.image-class {
 					cursor: pointer;
@@ -178,7 +183,8 @@ header {
 				}
 				.progress {
 					background-color: #DDDDDD;
-					margin: 20px 10px;
+					box-sizing: border-box;
+					margin: 20px auto;
 					display: flex;
 					align-items: center;
 					font-size: 30px;
@@ -198,7 +204,21 @@ header {
 				}
 			}
 		}
+	.career-goal {
+		position: absolute;
+		bottom: 10%;
+		max-width: 80%;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		p {
+			color: $black-color;
+			font-weight: bold;
+			font-size: 30px;
+			text-align: center;
+		}
 	}
+}
 
 /*------------------------------*/
 /* HOVER TECHNOLOGY */
@@ -245,7 +265,7 @@ header {
 /* Hover JS */
 
 .skills .flex-row .progress-container .image3:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 	transition: 1s;
 }
 .skills .flex-row .progress-container .image3:hover + .progress .js {
@@ -266,7 +286,7 @@ header {
 /*------------------------------*/
 .projects {
 	height: 100vh;
-	background-color: #bdc3c7;
+	background-color: $green_color;
 }
 
 /*------------------------------*/
