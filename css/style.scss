@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Mitr');
+@import url('https://fonts.googleapis.com/css?family=Mitr|Nova+Square');
+@import url('https://fonts.googleapis.com/css?family=Mitr|Noto+Sans|Nova+Square');
 
 /*------------------------------*/
 /* SASS Variables */
@@ -11,6 +14,12 @@ $silver_color: #ecf0f1;
 $white_color: #FFF;
 $black_color: #000;
 $section_grey: #e6e6e6;
+$darker_grey: #bdc3c7;
+$html_darker_orange: #E44D26;
+$html_orange: #F16529;
+$css_darker_blue: #2162AF;
+$css_blue: #369CD6;
+$js_yellow: #F7DF1E;
 
 /*------------------------------*/
 /* General Style */
@@ -30,7 +39,7 @@ body {
 	font-size: 25px;
 	font-weight: bold;
 	border: none;
-	box-shadow: 0 20px 30px 0 $black_color;
+	box-shadow: 0 10px 40px 0 $green_color;
 	cursor: pointer;
 }
 .activeButton:active {
@@ -102,7 +111,7 @@ header {
 /*------------------------------*/
 
 .jumbotron {
-	background-color: $green_color;
+	background-color: $black_color;
 	height: 100vh;
 	margin: 0 auto;
 	text-align: center;
@@ -128,7 +137,7 @@ header {
 			background-color: $white_color;
 			color: $green_color;
 			&:hover {
-				background-color: black;
+				background-color: $green_color;
 				color: $white_color;
 				transition: .8s;
 				box-shadow: none;
@@ -147,8 +156,9 @@ header {
 
 .skills {
 	height: 100vh;
-	background-color: #bdc3c7;
+	background-color: $white_color;
 	position: relative;
+	background: linear-gradient(180deg, $black_color, $darker_grey);
 	.flex-row {
 		display: flex;
 		max-width: 80%;
@@ -212,10 +222,14 @@ header {
 		left: 0;
 		right: 0;
 		p {
-			color: $black-color;
-			font-weight: bold;
+			color: $white_color;
+			// font-family: 'Noto Sans', sans-serif;
+			font-family: 'Mitr', sans-serif;
+			// font-family: 'Nova Square', cursive;
+			font-weight: semi-bold;
 			font-size: 30px;
 			text-align: center;
+			// box-shadow: 0 20px 30px 0 $black_color;
 		}
 	}
 }
@@ -286,7 +300,7 @@ header {
 /*------------------------------*/
 .projects {
 	height: 100vh;
-	background-color: $green_color;
+	background: linear-gradient(180deg, $darker_grey, #6D8084);
 }
 
 /*------------------------------*/
