@@ -22,7 +22,7 @@ body {
   font-size: 25px;
   font-weight: bold;
   border: none;
-  box-shadow: 0 10px 40px 0 #14bd4c;
+  box-shadow: 0 10px 40px 0 #2162AF;
   cursor: pointer; }
 
 .activeButton:active {
@@ -76,9 +76,9 @@ header {
           color: #000;
           font-weight: bold; }
           header .menu ul li a:hover {
-            color: #14bd4c;
-            font-size: 18px;
-            transition: 0.5s; }
+            color: #369CD6;
+            font-size: 20px;
+            transition: 0.8s; }
 
 /*------------------------------*/
 /* Jumbotron section*/
@@ -106,9 +106,9 @@ header {
         margin: 0; }
     .jumbotron .particles .button-technology {
       background-color: #FFF;
-      color: #14bd4c; }
+      color: #2162AF; }
       .jumbotron .particles .button-technology:hover {
-        background-color: #14bd4c;
+        background-color: #369CD6;
         color: #FFF;
         transition: .8s;
         box-shadow: none; }
@@ -129,7 +129,7 @@ header {
   height: 100vh;
   background-color: #FFF;
   position: relative;
-  background: linear-gradient(180deg, #000, #bdc3c7); }
+  background: linear-gradient(180deg, #000, #369CD6); }
   .skills .flex-row {
     display: flex;
     max-width: 80%;
@@ -147,11 +147,11 @@ header {
       .skills .flex-row .progress-container .image-class {
         cursor: pointer; }
       .skills .flex-row .progress-container .image1 img {
-        width: 100%; }
+        width: 90%; }
       .skills .flex-row .progress-container .image2 img {
-        width: 100%; }
+        width: 90%; }
       .skills .flex-row .progress-container .image3 img {
-        width: 100%; }
+        width: 90%; }
       .skills .flex-row .progress-container .progress {
         background-color: #DDDDDD;
         box-sizing: border-box;
@@ -181,7 +181,11 @@ header {
       font-family: 'Mitr', sans-serif;
       font-weight: semi-bold;
       font-size: 30px;
-      text-align: center; }
+      text-align: center;
+      cursor: pointer; }
+      .skills .career-goal p:hover {
+        box-shadow: 0 10px 30px 10px #e6e6e6;
+        transition: 1s; }
 
 /*------------------------------*/
 /* HOVER TECHNOLOGY */
@@ -242,7 +246,19 @@ header {
 /*------------------------------*/
 .projects {
   height: 100vh;
-  background: linear-gradient(180deg, #bdc3c7, #6D8084); }
+  background: linear-gradient(180deg, #bdc3c7, #6D8084);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .projects .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%; }
+    .projects .flex-row .projects-image {
+      display: flex;
+      flex-direction: column;
+      margin-right: 10px; }
 
 /*------------------------------*/
 /* Game section */
