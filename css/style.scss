@@ -99,13 +99,14 @@ header {
 					&:hover {
 						font-size: 20px;
 						transition: 0.8s;
+						color: $css_blue;
 					}
 					&:before {
 						content: "";
 						position: absolute;
 						width: 100%;
-						height: 2px;
-						bottom: 0;
+						height: 3px;
+						bottom: -5px;
 						left: 0;
 						background-color: $css_darker_blue;
 						visibility: hidden;
@@ -174,7 +175,7 @@ header {
 	height: 100vh;
 	background-color: $white_color;
 	position: relative;
-	background: linear-gradient(180deg, $black_color, $css_blue);
+	background: linear-gradient(180deg, $black_color, #13305B, #499ADB);
 	.flex-row {
 		display: flex;
 		max-width: 80%;
@@ -247,7 +248,7 @@ header {
 			text-align: center;
 			cursor: pointer;
 			&:hover {
-				box-shadow: 0 10px 30px 10px $section_grey;
+				box-shadow: 0 0 20px 10px $section_grey;
 				transition: 1s;
 			}
 		}
@@ -321,7 +322,7 @@ header {
 
 .projects {
 	height: 100vh;
-	background: linear-gradient(180deg, $darker_grey, #6D8084);
+	background: linear-gradient(180deg, #499ADB, #9FCCED);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -374,6 +375,7 @@ header {
 	background-repeat: no-repeat;
 	margin-bottom: -80px;
 	background-size: 100% 100%;
+	box-shadow: 0 10px 30px 10px $white_color;
 	> h1 {
 		text-align: center;
 		font-size: 60px;
