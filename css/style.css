@@ -156,10 +156,12 @@ header {
     .skills .flex-row .progress-container {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       margin: 0 20px;
       width: 100%; }
       .skills .flex-row .progress-container .image-class {
-        cursor: pointer; }
+        cursor: pointer;
+        text-align: center; }
       .skills .flex-row .progress-container .image1 img {
         width: 90%; }
       .skills .flex-row .progress-container .image2 img {
