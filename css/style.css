@@ -328,7 +328,7 @@ header {
     .game .new-game-container .newGameButton:hover {
       color: #369CD6;
       background-color: #FFF;
-      transition: .8s;
+      transition: 1s;
       box-shadow: none; }
   .game .player-pick-container {
     flex-wrap: wrap;
