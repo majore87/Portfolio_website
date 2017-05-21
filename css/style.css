@@ -205,7 +205,7 @@ header {
         transition: 1s; }
 
 /*------------------------------*/
-/* HOVER TECHNOLOGY */
+/* HOVER SKILLS */
 /*------------------------------*/
 /* Hover HTML */
 .skills .flex-row .progress-container .image1:hover {
@@ -263,19 +263,45 @@ header {
 /*------------------------------*/
 .projects {
   height: 100vh;
-  background: linear-gradient(180deg, #499ADB, #9FCCED);
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .projects .flex-row {
+  background: linear-gradient(180deg, #499ADB, #9FCCED); }
+  .projects .section-title {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%; }
-    .projects .flex-row .projects-image {
+    .projects .section-title h1 {
+      color: #FFF;
+      font-size: 40px;
+      flex-direction: flex-row; }
+  .projects .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .projects .flex-row .projects-images {
       display: flex;
       flex-direction: column;
-      margin-right: 10px; }
+      margin-right: 40px;
+      cursor: pointer; }
+      .projects .flex-row .projects-images:hover {
+        transform: scale(1.1);
+        transition: .4s; }
+      .projects .flex-row .projects-images .github {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+        font-size: 60px;
+        border-radius: 20px;
+        border: none; }
+        .projects .flex-row .projects-images .github:hover {
+          color: #FFF;
+          background-color: #000;
+          transition: .4s;
+          transform: scale(1.1); }
 
 /*------------------------------*/
 /* Game section */

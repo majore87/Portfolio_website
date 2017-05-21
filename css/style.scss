@@ -256,7 +256,7 @@ header {
 }
 
 /*------------------------------*/
-/* HOVER TECHNOLOGY */
+/* HOVER SKILLS */
 /*------------------------------*/
 
 /* Hover HTML */
@@ -323,18 +323,49 @@ header {
 .projects {
 	height: 100vh;
 	background: linear-gradient(180deg, #499ADB, #9FCCED);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	.flex-row {
+	.section-title {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		width: 100%;
-		.projects-image {
+		h1 {
+		color: $white_color;
+		font-size: 40px;
+		flex-direction: flex-row;
+		}
+	}
+	.flex-row {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		.projects-images {
 			display: flex;
 			flex-direction: column;
-			margin-right: 10px;
+			margin-right: 40px;
+			cursor: pointer;
+			&:hover {
+				transform: scale(1.1);
+				transition: .4s;
+			}
+			.github {
+				cursor: pointer;
+				display: flex;
+				justify-content: center;
+				width: 100px;
+				height: 100px;
+				margin-top: 20px;
+				font-size: 60px;
+				border-radius: 20px;
+				border: none;
+				&:hover {
+					color: $white_color;
+					background-color: $black_color;
+					transition: .4s;
+					transform: scale(1.1);
+				}
+			}
 		}
 	}
 }
