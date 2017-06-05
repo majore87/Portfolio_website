@@ -23,7 +23,8 @@ body {
   font-weight: bold;
   border: none;
   box-shadow: 0 10px 40px 0 #2162AF;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
 
 .activeButton:active {
   vertical-align: top;
@@ -36,6 +37,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.responsive-row {
+  display: flex;
+  flex-wrap: wrap; }
 
 /*------------------------------*/
 /* Navigation */
@@ -262,7 +267,9 @@ header {
 /*------------------------------*/
 .projects {
   height: 100vh;
-  background: linear-gradient(180deg, #499ADB, #9FCCED); }
+  background: linear-gradient(180deg, #499ADB, #9FCCED);
+  max-width: 100%;
+  position: relative; }
   .projects h1 {
     color: #FFF;
     font-size: 40px;
@@ -272,31 +279,35 @@ header {
   .projects .flex-row {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%; }
+    align-content: center; }
     .projects .flex-row .projects-images {
-      display: flex;
-      flex-direction: column;
-      margin-right: 40px;
-      cursor: pointer; }
-      .projects .flex-row .projects-images:hover {
-        transform: scale(1.1);
-        transition: .4s; }
-      .projects .flex-row .projects-images .github {
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        width: 100px;
-        height: 100px;
-        margin-top: 20px;
-        font-size: 60px;
-        border-radius: 20px;
-        border: none; }
-        .projects .flex-row .projects-images .github:hover {
-          color: #FFF;
-          background-color: #000;
-          transition: .6s; }
+      cursor: pointer;
+      text-align: center;
+      padding: 0 10px; }
+      .projects .flex-row .projects-images img {
+        width: 400px;
+        max-width: 100%; }
+        .projects .flex-row .projects-images img:hover {
+          transform: scale(1.1);
+          transition: .4s; }
+      .projects .flex-row .projects-images a {
+        text-decoration: none; }
+        .projects .flex-row .projects-images a .github {
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          width: 100px;
+          height: 100px;
+          margin: 0 auto;
+          margin-top: 30px;
+          font-size: 60px;
+          border-radius: 20px;
+          border: none;
+          outline: none; }
+          .projects .flex-row .projects-images a .github:hover {
+            color: #FFF;
+            background-color: #000;
+            transition: .6s; }
 
 /*------------------------------*/
 /* Game section */
@@ -434,12 +445,7 @@ footer {
       justify-content: flex-start;
       align-items: center;
       flex-grow: 1; }
-    footer .footer-container .contact {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-grow: 1; }
-    footer .footer-container .phone {
+    footer .footer-container .contact, footer .footer-container .phone {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -492,7 +498,10 @@ footer {
     flex: 91.667%; }
 
   .col-s-12 {
-    flex: 100%; } }
+    flex: 100%; }
+
+  .projects {
+    height: 100%; } }
 /* For tablets: */
 /*------------------------------*/
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -530,7 +539,10 @@ footer {
     flex: 91.667%; }
 
   .col-m-12 {
-    flex: 100%; } }
+    flex: 100%; }
+
+  .projects {
+    height: 100%; } }
 /* For desktop: */
 /*------------------------------*/
 @media (min-width: 1200px) {

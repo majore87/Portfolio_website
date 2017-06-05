@@ -41,6 +41,7 @@ body {
 	border: none;
 	box-shadow: 0 10px 40px 0 $css_darker_blue;
 	cursor: pointer;
+	outline: none;
 }
 .activeButton:active {
 	vertical-align: top;
@@ -53,6 +54,10 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.responsive-row {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 /*------------------------------*/
@@ -322,11 +327,8 @@ header {
 .projects {
 	height: 100vh;
 	background: linear-gradient(180deg, #499ADB, #9FCCED);
-	// .section-title {
-	// 	display: flex;
-	// 	flex-direction: row;
-	// 	justify-content: center;
-	// 	width: 100%;
+	max-width: 100%;
+	position: relative;
 	h1 {
 		color: $white_color;
 		font-size: 40px;
@@ -337,33 +339,46 @@ header {
 	.flex-row {
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
+		// justify-content: center;
+		// align-items: center;
+		align-content: center;
+		// width: 100%;
 		.projects-images {
-			display: flex;
-			flex-direction: column;
-			margin-right: 40px;
+			// display: flex;
+			// flex-direction: column;
+			// margin: 0 auto;
 			cursor: pointer;
-			&:hover {
-				transform: scale(1.1);
-				transition: .4s;
+			text-align: center;
+			padding: 0 10px;
+			// justify-content: flex-center;
+			img {
+				width: 400px;
+				max-width: 100%;
+				&:hover {
+					transform: scale(1.1);
+					transition: .4s;
+				}
 			}
-			.github {
+			a {
+				text-decoration: none;
+				.github {
 				cursor: pointer;
 				display: flex;
 				justify-content: center;
 				width: 100px;
 				height: 100px;
-				margin-top: 20px;
+				margin: 0 auto;
+				margin-top: 30px;
 				font-size: 60px;
 				border-radius: 20px;
 				border: none;
+				outline: none;
 				&:hover {
 					color: $white_color;
 					background-color: $black_color;
 					transition: .6s;
 					// transform: scale(1.1);
+					}
 				}
 			}
 		}
@@ -532,13 +547,7 @@ footer {
 			align-items: center;
 			flex-grow: 1;
 		}
-		.contact {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-grow: 1;
-		}
-		.phone {
+		.contact, .phone {
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -577,6 +586,10 @@ footer {
     .col-s-11 {flex: 91.667%;}
     .col-s-12 {flex: 100%;}
 
+    .projects {
+	height: 100%;
+	}
+
 }
 
 /* For tablets: */
@@ -596,6 +609,10 @@ footer {
     .col-m-10 {flex: 83.333%;}
     .col-m-11 {flex: 91.667%;}
     .col-m-12 {flex: 100%;}
+
+    .projects {
+	height: 100%;
+	}
 }
 
 /* For desktop: */
