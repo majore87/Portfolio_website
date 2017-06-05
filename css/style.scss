@@ -98,8 +98,7 @@ header {
 					position: relative;
 					&:hover {
 						font-size: 20px;
-						transition: 0.8s;
-						color: $css_blue;
+						transition: 0.4s;
 					}
 					&:before {
 						content: "";
@@ -111,7 +110,7 @@ header {
 						background-color: $css_darker_blue;
 						visibility: hidden;
 						transform: scaleX(0);
-						transition: all 0.8s ease-in-out 0s;
+						transition: all 0.4s ease-in-out 0s;
 					}
 					&:hover:before {
 						visibility: visible;
@@ -323,17 +322,18 @@ header {
 .projects {
 	height: 100vh;
 	background: linear-gradient(180deg, #499ADB, #9FCCED);
-	.section-title {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		width: 100%;
-		h1 {
+	// .section-title {
+	// 	display: flex;
+	// 	flex-direction: row;
+	// 	justify-content: center;
+	// 	width: 100%;
+	h1 {
 		color: $white_color;
 		font-size: 40px;
-		flex-direction: flex-row;
+		margin: 0 auto;
+		margin-bottom: 40px;
+		text-align: center;
 		}
-	}
 	.flex-row {
 		display: flex;
 		flex-direction: row;
@@ -362,8 +362,8 @@ header {
 				&:hover {
 					color: $white_color;
 					background-color: $black_color;
-					transition: .4s;
-					transform: scale(1.1);
+					transition: .6s;
+					// transform: scale(1.1);
 				}
 			}
 		}
@@ -553,3 +553,67 @@ footer {
 	}
 }
 
+/*------------------------------*/
+/*------------------------------*/
+/* Responsive design */
+/*------------------------------*/
+/*------------------------------*/
+
+/* For smartphones: */
+/*------------------------------*/
+
+@media (max-width: 767px) {
+
+	.col-s-1 {flex: 8.333%;}
+    .col-s-2 {flex: 16.667%;}
+    .col-s-3 {flex: 25%;}
+    .col-s-4 {flex: 33.333%;}
+    .col-s-5 {flex: 41.667%;}
+    .col-s-6 {flex: 50%;}
+    .col-s-7 {flex: 58.333%;}
+    .col-s-8 {flex: 66.667%;}
+    .col-s-9 {flex: 75%;}
+    .col-s-10 {flex: 83.333%;}
+    .col-s-11 {flex: 91.667%;}
+    .col-s-12 {flex: 100%;}
+
+}
+
+/* For tablets: */
+/*------------------------------*/
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+	.col-m-1 {flex: 8.333%;}
+    .col-m-2 {flex: 16.667%;}
+    .col-m-3 {flex: 25%;}
+    .col-m-4 {flex: 33.333%;}
+    .col-m-5 {flex: 41.667%;}
+    .col-m-6 {flex: 50%;}
+    .col-m-7 {flex: 58.333%;}
+    .col-m-8 {flex: 66.667%;}
+    .col-m-9 {flex: 75%;}
+    .col-m-10 {flex: 83.333%;}
+    .col-m-11 {flex: 91.667%;}
+    .col-m-12 {flex: 100%;}
+}
+
+/* For desktop: */
+/*------------------------------*/
+
+@media (min-width: 1200px) {
+
+	.col-l-1 {flex: 8.333%;}
+    .col-l-2 {flex: 16.667%;}
+    .col-l-3 {flex: 25%;}
+    .col-l-4 {flex: 33.333%;}
+    .col-l-5 {flex: 41.667%;}
+    .col-l-6 {flex: 50%;}
+    .col-l-7 {flex: 58.333%;}
+    .col-l-8 {flex: 66.667%;}
+    .col-l-9 {flex: 75%;}
+    .col-l-10 {flex: 83.333%;}
+    .col-l-11 {flex: 91.667%;}
+    .col-l-12 {flex: 100%;}
+
+}
