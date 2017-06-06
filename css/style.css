@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
-@import url("https://fonts.googleapis.com/css?family=Mitr");
 @import url("https://fonts.googleapis.com/css?family=Mitr|Nova+Square");
 @import url("https://fonts.googleapis.com/css?family=Mitr|Noto+Sans|Nova+Square");
+@import url("https://fonts.googleapis.com/css?family=Eagle+Lake|Mitr|Noto+Sans");
 /*------------------------------*/
 /* SASS Variables */
 /*------------------------------*/
@@ -274,12 +274,29 @@ header {
     color: #FFF;
     font-size: 40px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: center; }
   .projects .flex-row {
     display: flex;
     flex-direction: row;
-    align-content: center; }
+    align-content: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -310px;
+    left: 0;
+    right: 0; }
+    .projects .flex-row .portfolio h1 {
+      color: #000;
+      font-family: 'Mitr', sans-serif;
+      font-size: 50px; }
+    .projects .flex-row .fire h1 {
+      color: #C63473;
+      font-family: 'Eagle Lake', cursive;
+      font-size: 50px; }
+    .projects .flex-row .company h1 {
+      color: #313332;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 50px; }
     .projects .flex-row .projects-images {
       cursor: pointer;
       text-align: center;
@@ -307,7 +324,8 @@ header {
           .projects .flex-row .projects-images a .github:hover {
             color: #FFF;
             background-color: #000;
-            transition: .6s; }
+            transition: .6s;
+            transform: scale(1.1); }
 
 /*------------------------------*/
 /* Game section */

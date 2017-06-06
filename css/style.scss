@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
-@import url('https://fonts.googleapis.com/css?family=Mitr');
 @import url('https://fonts.googleapis.com/css?family=Mitr|Nova+Square');
 @import url('https://fonts.googleapis.com/css?family=Mitr|Noto+Sans|Nova+Square');
+@import url('https://fonts.googleapis.com/css?family=Eagle+Lake|Mitr|Noto+Sans');
 
 /*------------------------------*/
 /* SASS Variables */
@@ -20,6 +20,8 @@ $html_orange: #F16529;
 $css_darker_blue: #2162AF;
 $css_blue: #369CD6;
 $js_yellow: #F7DF1E;
+$fire: #C63473;
+$company: #313332;
 
 /*------------------------------*/
 /* General Style */
@@ -333,24 +335,43 @@ header {
 		color: $white_color;
 		font-size: 40px;
 		margin: 0 auto;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 		text-align: center;
 		}
 	.flex-row {
 		display: flex;
 		flex-direction: row;
-		// justify-content: center;
-		// align-items: center;
 		align-content: center;
-		// width: 100%;
+		position: absolute;
+		top: 50%;
+		margin-top: -310px;
+		left: 0;
+		right: 0;
+		.portfolio {
+			h1 {
+				color: $black_color;
+				font-family: 'Mitr', sans-serif;
+				font-size: 50px;
+			}
+		}
+		.fire {
+			h1 {
+				color: $fire;
+				font-family: 'Eagle Lake', cursive;
+				font-size: 50px;
+			}
+		}
+		.company {
+			h1 {
+				color: $company;
+				font-family: 'Open Sans', sans-serif;
+				font-size: 50px;
+			}
+		}
 		.projects-images {
-			// display: flex;
-			// flex-direction: column;
-			// margin: 0 auto;
 			cursor: pointer;
 			text-align: center;
 			padding: 0 10px;
-			// justify-content: flex-center;
 			img {
 				width: 400px;
 				max-width: 100%;
@@ -377,7 +398,7 @@ header {
 					color: $white_color;
 					background-color: $black_color;
 					transition: .6s;
-					// transform: scale(1.1);
+					transform: scale(1.1);
 					}
 				}
 			}
