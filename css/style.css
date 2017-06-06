@@ -300,32 +300,32 @@ header {
     .projects .flex-row .projects-images {
       cursor: pointer;
       text-align: center;
-      padding: 0 10px; }
+      text-decoration: none; }
       .projects .flex-row .projects-images img {
-        width: 400px;
-        max-width: 100%; }
+        height: 300px;
+        max-height: 100%;
+        width: 500px;
+        max-width: 100%;
+        margin: 40px 0; }
         .projects .flex-row .projects-images img:hover {
-          transform: scale(1.1);
+          transform: scale(1.3);
           transition: .4s; }
-      .projects .flex-row .projects-images a {
-        text-decoration: none; }
-        .projects .flex-row .projects-images a .github {
-          cursor: pointer;
-          display: flex;
-          justify-content: center;
-          width: 100px;
-          height: 100px;
-          margin: 0 auto;
-          margin-top: 30px;
-          font-size: 60px;
-          border-radius: 20px;
-          border: none;
-          outline: none; }
-          .projects .flex-row .projects-images a .github:hover {
-            color: #FFF;
-            background-color: #000;
-            transition: .6s;
-            transform: scale(1.1); }
+      .projects .flex-row .projects-images .github {
+        display: inline-block;
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 30px;
+        font-size: 60px;
+        border-radius: 20px;
+        border: none;
+        outline: none; }
+        .projects .flex-row .projects-images .github:hover {
+          color: #FFF;
+          background-color: #000;
+          transition: .6s;
+          transform: scale(1.1); }
 
 /*------------------------------*/
 /* Game section */
