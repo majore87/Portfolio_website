@@ -180,40 +180,31 @@ header {
 .skills {
 	height: 100vh;
 	background-color: $white_color;
-	position: relative;
+	align-items: center;
 	background: linear-gradient(180deg, $black_color, #13305B, #499ADB);
+	position: relative;
 	.flex-row {
 		display: flex;
-		max-width: 80%;
+		flex-wrap: wrap;
+		max-width: 90%;
 		margin: 0 auto;
 		position: absolute;
 		top: 50%;
-		margin-top: -300px;
+		margin-top: -150px;
 		left: 0;
 		right: 0;
 		.progress-container {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			margin: 0 20px;
-			width: 100%;
+			padding: 0 10px;
+			max-width: 100%;
 			.image-class {
 				cursor: pointer;
 				text-align: center;
-			}
-			.image1 {
+				max-width: 100%;
+				padding: 0 10px;
 				img {
-					width: 70%;
-				}
-			}
-			.image2 {
-				img {
-					width: 70%;
-				}
-			}
-			.image3 {
-				img {
-					width: 70%;
+					width: 300px;
+					max-width: 100%;
+					height: auto;
 				}
 			}
 			.progress {
@@ -224,44 +215,36 @@ header {
 				align-items: center;
 				font-size: 30px;
 				font-weight: bold;
-				width: 100%;
+				width: 350px;
+				max-width: 100%;
 				box-shadow: 0 20px 30px 0 $black_color;
 				color: #DDDDDD;
-				.html {
+				.progress-bar {
 					width: 0.1%;
-				}
-				.css3 {
-					width: 0.1%;
-				}
-				.js {
-					width: 0.1%;
+					max-width: 100%;
 				}
 			}
 		}
-	}
-	.career-goal {
-		position: absolute;
-		bottom: 10%;
-		max-width: 80%;
-		margin: 0 auto;
-		left: 0;
-		right: 0;
-		p {
-			color: $white_color;
-			font-family: 'Mitr', sans-serif;
-			font-weight: semi-bold;
-			font-size: 30px;
-			text-align: center;
-			cursor: pointer;
-			&:hover {
-				box-shadow: 0 0 20px 10px $section_grey;
-				transition: 1s;
+		.career-goal {
+			margin: 50px;
+			display: block;
+			p {
+				color: $white_color;
+				font-family: 'Mitr', sans-serif;
+				font-weight: semi-bold;
+				font-size: 30px;
+				text-align: center;
+				cursor: pointer;
+				&:hover {
+					box-shadow: 0 0 20px 10px $section_grey;
+					transition: 1s;
+				}
 			}
 		}
 	}
 }
 
-/*------------------------------*/
+
 /* HOVER SKILLS */
 /*------------------------------*/
 
@@ -354,10 +337,9 @@ header {
 				display: block;
 				text-align: center;
 				cursor: pointer;
-				height: 300px;
 				width: 500px;
 				max-width: 100%;
-				max-height: 100%;
+				height: auto;
 				margin: 40px auto;
 				box-shadow: 0 10px 40px 20px $white_color;
 				&:hover {
@@ -607,7 +589,14 @@ footer {
     .col-s-11 {flex: 91.667%;}
     .col-s-12 {flex: 100%;}
 
+	/* Skills section */
 	/*------------------------------*/
+
+	.skills {
+		height: 100%;
+	}
+
+
 	/* Projects section */
 	/*------------------------------*/
 
@@ -626,7 +615,6 @@ footer {
 			}
 		}
 	}
-
 }
 
 /*------------------------------*/
@@ -648,7 +636,24 @@ footer {
     .col-m-11 {flex: 91.667%;}
     .col-m-12 {flex: 100%;}
 
-    /*------------------------------*/
+    /* Skills section */
+	/*------------------------------*/
+
+	.skills {
+		height: 100%;
+		padding-top: 200px;
+		padding-bottom: 200px;
+		.flex-row {
+			position: static;
+			.progress-container {
+				margin: 20px auto;
+			}
+			.career-goal {
+				margin: 30px;
+			}
+		}
+	}
+
 	/* Projects section */
 	/*------------------------------*/
 
