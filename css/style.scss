@@ -358,6 +358,7 @@ header {
 				border-radius: 20px;
 				border: none;
 				outline: none;
+				background-color: $white_color;
 				box-shadow: 0 10px 40px 0 $white_color;
 				&:hover {
 					color: $white_color;
@@ -369,7 +370,6 @@ header {
 			}
 			.portfolio-btn {
 				color: $css_darker_blue;
-				background-color: $white_color;
 				&:hover {
 					color: $white_color;
 					background-color: $css_darker_blue;
@@ -379,7 +379,6 @@ header {
 				color: $fire;
 				background-color: $white_color;
 				&:hover {
-					color: $white_color;
 					background-color: $fire;
 				}
 			}
@@ -589,11 +588,22 @@ footer {
     .col-s-11 {flex: 91.667%;}
     .col-s-12 {flex: 100%;}
 
+    .border {
+		padding-top: 100px;
+		padding-bottom: 100px
+	}
+
 	/* Skills section */
 	/*------------------------------*/
 
 	.skills {
 		height: 100%;
+		.flex-row {
+			position: static;
+			.progress-container {
+				margin: 20px auto;
+			}
+		}
 	}
 
 
@@ -635,6 +645,11 @@ footer {
     .col-m-10 {flex: 83.333%;}
     .col-m-11 {flex: 91.667%;}
     .col-m-12 {flex: 100%;}
+
+    .border {
+		padding-top: 100px;
+		padding-bottom: 100px
+	}
 
     /* Skills section */
 	/*------------------------------*/
