@@ -42,12 +42,49 @@ body {
   display: flex;
   flex-wrap: wrap; }
 
+/* COLUMN OFFSET */
+/*------------------------------ */
+.col-offset-0 {
+  margin-left: 0%; }
+
+.col-offset-1 {
+  margin-left: 8.33%; }
+
+.col-offset-2 {
+  margin-left: 16.66%; }
+
+.col-offset-3 {
+  margin-left: 25%; }
+
+.col-offset-4 {
+  margin-left: 33.33%; }
+
+.col-offset-5 {
+  margin-left: 41.66%; }
+
+.col-offset-6 {
+  margin-left: 50%; }
+
+.col-offset-7 {
+  margin-left: 58.33%; }
+
+.col-offset-8 {
+  margin-left: 66.66%; }
+
+.col-offset-9 {
+  margin-left: 75%; }
+
+.col-offset-10 {
+  margin-left: 83.33%; }
+
+.col-offset-11 {
+  margin-left: 91.66%; }
+
 /*------------------------------*/
 /* Navigation */
 /*------------------------------*/
 header {
   background-color: #FFF;
-  position: fixed;
   width: 100%;
   overflow: hidden;
   top: 0; }
@@ -329,7 +366,7 @@ header {
 .span-label {
   height: 40px;
   width: 100px;
-  margin: 0 10px;
+  margin: 10px;
   border: 2px solid;
   border-radius: 10px;
   font-weight: bold; }
@@ -395,15 +432,15 @@ header {
     color: #FFF;
     font-weight: bold; }
     .game .results .row {
+      max-width: 1200px;
       margin: 0 auto;
-      width: 40vw;
       font-weight: bold;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap; }
       .game .results .row .player {
         display: flex;
-        justify-content: flex-start;
+        justify-content: flex-end;
         flex-grow: 1; }
         .game .results .row .player :nth-child(2) {
           margin: 0 0 10px 10px; }
@@ -413,26 +450,26 @@ header {
         flex-grow: 2; }
       .game .results .row .computer {
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         flex-grow: 1; }
         .game .results .row .computer :nth-child(2) {
           margin: 0 0 10px 10px; }
       .game .results .row .playerChoice {
         display: flex;
-        justify-content: flex-start;
+        justify-content: flex-end;
         flex-grow: 1; }
       .game .results .row .computerChoice {
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         flex-grow: 1; }
       .game .results .row .playerResult {
         display: flex;
-        justify-content: flex-start;
+        justify-content: flex-end;
         flex-grow: 1;
         margin: 10px 0; }
       .game .results .row .computerResult {
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         flex-grow: 1;
         margin: 10px 0; }
       .game .results .row .playerChoice, .game .results .row .computerChoice, .game .results .row .playerResult, .game .results .row .computerResult {
@@ -456,7 +493,7 @@ footer {
     font-weight: bold; }
     footer .footer-container .copyright {
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
       flex-grow: 1; }
     footer .footer-container .contact, footer .footer-container .phone {
@@ -466,7 +503,7 @@ footer {
       flex-grow: 1; }
     footer .footer-container .city {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: center;
       flex-grow: 1; }
 
@@ -531,13 +568,15 @@ footer {
         height: 50px;
         vertical-align: middle;
         max-width: 100%;
-        margin: auto; }
+        margin: auto;
+        line-height: 50px; }
       header .menu label {
         display: inline-block;
         float: right;
         font-size: 30px;
         cursor: pointer;
-        margin-right: 15px; }
+        margin-right: 15px;
+        line-height: 50px; }
       header .menu input {
         display: none; }
       header .menu #menu-button:not(:checked) ~ ul {
@@ -554,6 +593,8 @@ footer {
           text-align: center;
           height: 50px;
           margin: 15px auto; }
+          header .menu ul li a {
+            line-height: 50px; }
 
   /* Jumbotron section */
   /*------------------------------*/
@@ -579,7 +620,17 @@ footer {
       .projects .flex-row .projects-images img:hover {
         transform: none; }
     .projects .flex-row .projects-images .github {
-      margin-bottom: 100px; } }
+      margin-bottom: 100px; }
+
+  /* Game section */
+  /*------------------------------*/
+  .game {
+    max-height: 100vh; }
+    .game .results .row {
+      margin: 15px auto; }
+      .game .results .row [class*="col-"] {
+        justify-content: center;
+        margin: 5px auto; } }
 /*------------------------------*/
 /* For tablets: */
 /*------------------------------*/
