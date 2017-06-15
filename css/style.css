@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 @import url("https://fonts.googleapis.com/css?family=Mitr|Nova+Square");
-@import url("https://fonts.googleapis.com/css?family=Mitr|Noto+Sans|Nova+Square");
-@import url("https://fonts.googleapis.com/css?family=Eagle+Lake|Mitr|Noto+Sans");
 /*------------------------------*/
 /* SASS Variables */
 /*------------------------------*/
@@ -41,44 +39,6 @@ body {
 .responsive-row {
   display: flex;
   flex-wrap: wrap; }
-
-/* COLUMN OFFSET */
-/*------------------------------ */
-.col-offset-0 {
-  margin-left: 0%; }
-
-.col-offset-1 {
-  margin-left: 8.33%; }
-
-.col-offset-2 {
-  margin-left: 16.66%; }
-
-.col-offset-3 {
-  margin-left: 25%; }
-
-.col-offset-4 {
-  margin-left: 33.33%; }
-
-.col-offset-5 {
-  margin-left: 41.66%; }
-
-.col-offset-6 {
-  margin-left: 50%; }
-
-.col-offset-7 {
-  margin-left: 58.33%; }
-
-.col-offset-8 {
-  margin-left: 66.66%; }
-
-.col-offset-9 {
-  margin-left: 75%; }
-
-.col-offset-10 {
-  margin-left: 83.33%; }
-
-.col-offset-11 {
-  margin-left: 91.66%; }
 
 /*------------------------------*/
 /* Navigation */
@@ -190,8 +150,6 @@ header {
   background: linear-gradient(180deg, #000, #13305B, #499ADB);
   position: relative; }
   .skills .flex-row {
-    display: flex;
-    flex-wrap: wrap;
     max-width: 90%;
     margin: 0 auto;
     position: absolute;
@@ -242,11 +200,16 @@ header {
 
 /* HOVER SKILLS */
 /*------------------------------*/
-/* Hover HTML */
-.skills .flex-row .progress-container .image1:hover {
+/* Hover general */
+.skills .flex-row .progress-container .image1:hover, .image2:hover {
   transform: scale(1.1);
   transition: 1s; }
 
+.skills .flex-row .progress-container .image-class:hover + .progress {
+  box-shadow: none;
+  transition: 1s; }
+
+/* Hover HTML */
 .skills .flex-row .progress-container .image1:hover + .progress .html {
   background-color: #F16529;
   box-shadow: none;
@@ -255,15 +218,7 @@ header {
   width: 30%;
   text-align: right; }
 
-.skills .flex-row .progress-container .image1:hover + .progress {
-  box-shadow: none;
-  transition: 1s; }
-
 /* Hover CSS3 */
-.skills .flex-row .progress-container .image2:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
 .skills .flex-row .progress-container .image2:hover + .progress .css3 {
   background-color: #369CD6;
   box-shadow: none;
@@ -271,10 +226,6 @@ header {
   transition: 1s;
   width: 30%;
   text-align: right; }
-
-.skills .flex-row .progress-container .image2:hover + .progress {
-  box-shadow: none;
-  transition: 1s; }
 
 /* Hover JS */
 .skills .flex-row .progress-container .image3:hover {
@@ -286,12 +237,9 @@ header {
   box-shadow: none;
   color: #000;
   transition: 1s;
-  width: 10%;
-  text-align: right; }
-
-.skills .flex-row .progress-container .image3:hover + .progress {
-  box-shadow: none;
-  transition: 1s; }
+  width: 30%;
+  text-align: right;
+  width: 10%; }
 
 /*------------------------------*/
 /* Projects section */
@@ -327,7 +275,7 @@ header {
         height: auto;
         margin: 40px auto;
         box-shadow: 0 10px 40px 20px #FFF; }
-        .projects .flex-row .projects-images img:hover {
+        .projects .flex-row .projects-images img:hover, .projects .flex-row .projects-images .github:hover {
           transform: scale(1.1);
           transition: .6s;
           box-shadow: none; }
@@ -345,10 +293,7 @@ header {
         box-shadow: 0 10px 40px 0 #FFF; }
         .projects .flex-row .projects-images .github:hover {
           color: #FFF;
-          background-color: #000;
-          box-shadow: none;
-          transition: .6s;
-          transform: scale(1.1); }
+          background-color: #000; }
       .projects .flex-row .projects-images .portfolio-btn {
         color: #2162AF; }
         .projects .flex-row .projects-images .portfolio-btn:hover {
@@ -435,42 +380,25 @@ header {
       max-width: 1200px;
       margin: 0 auto;
       font-weight: bold;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; }
-      .game .results .row .player {
+      flex-direction: row; }
+      .game .results .row .player, .game .results .row .computer, .game .results .row .computerChoice, .game .results .row .playerChoice, .game .results .row .playerResult, .game .results .row .computerResult {
         display: flex;
         justify-content: flex-end;
         flex-grow: 1; }
-        .game .results .row .player :nth-child(2) {
+        .game .results .row .player :nth-child(2), .game .results .row .computer :nth-child(2), .game .results .row .computerChoice :nth-child(2), .game .results .row .playerChoice :nth-child(2), .game .results .row .playerResult :nth-child(2), .game .results .row .computerResult :nth-child(2) {
           margin: 0 0 10px 10px; }
       .game .results .row .VS {
         display: flex;
         justify-content: center;
         flex-grow: 2; }
-      .game .results .row .computer {
-        display: flex;
-        justify-content: flex-start;
-        flex-grow: 1; }
-        .game .results .row .computer :nth-child(2) {
+      .game .results .row .computer, .game .results .row .computerChoice {
+        justify-content: flex-start; }
+        .game .results .row .computer :nth-child(2), .game .results .row .computerChoice :nth-child(2) {
           margin: 0 0 10px 10px; }
-      .game .results .row .playerChoice {
-        display: flex;
-        justify-content: flex-end;
-        flex-grow: 1; }
-      .game .results .row .computerChoice {
-        display: flex;
-        justify-content: flex-start;
-        flex-grow: 1; }
       .game .results .row .playerResult {
-        display: flex;
-        justify-content: flex-end;
-        flex-grow: 1;
         margin: 10px 0; }
       .game .results .row .computerResult {
-        display: flex;
         justify-content: flex-start;
-        flex-grow: 1;
         margin: 10px 0; }
       .game .results .row .playerChoice, .game .results .row .computerChoice, .game .results .row .playerResult, .game .results .row .computerResult {
         font-size: 25px;
@@ -483,25 +411,13 @@ footer {
   background-color: #000;
   color: #FFF; }
   footer .footer-container {
-    display: flex;
-    flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
     max-width: 1200px;
     height: 80px;
     font-size: 15px;
     font-weight: bold; }
-    footer .footer-container .copyright {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-grow: 1; }
-    footer .footer-container .contact, footer .footer-container .phone {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-grow: 1; }
-    footer .footer-container .city {
+    footer .footer-container .copyright, footer .footer-container .contact, footer .footer-container .phone, footer .footer-container .city {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -617,7 +533,7 @@ footer {
     .projects .flex-row .projects-images img {
       margin-right: auto;
       margin-left: auto; }
-      .projects .flex-row .projects-images img:hover {
+      .projects .flex-row .projects-images img:hover, .projects .flex-row .projects-images .github:hover {
         transform: none; }
     .projects .flex-row .projects-images .github {
       margin-bottom: 100px; }
@@ -700,7 +616,7 @@ footer {
     .projects .flex-row .projects-images img {
       margin-right: auto;
       margin-left: auto; }
-      .projects .flex-row .projects-images img:hover {
+      .projects .flex-row .projects-images img:hover, .projects .flex-row .projects-images .github:hover {
         transform: none; }
     .projects .flex-row .projects-images .github {
       margin-bottom: 100px; } }

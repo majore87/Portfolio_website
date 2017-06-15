@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Mitr|Nova+Square');
-@import url('https://fonts.googleapis.com/css?family=Mitr|Noto+Sans|Nova+Square');
-@import url('https://fonts.googleapis.com/css?family=Eagle+Lake|Mitr|Noto+Sans');
 
 /*------------------------------*/
 /* SASS Variables */
@@ -61,44 +59,6 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 }
-
-/* COLUMN OFFSET */
-/*------------------------------ */
-.col-offset-0 {
-  margin-left: 0%; }
-
-.col-offset-1 {
-  margin-left: 8.33%; }
-
-.col-offset-2 {
-  margin-left: 16.66%; }
-
-.col-offset-3 {
-  margin-left: 25%; }
-
-.col-offset-4 {
-  margin-left: 33.33%; }
-
-.col-offset-5 {
-  margin-left: 41.66%; }
-
-.col-offset-6 {
-  margin-left: 50%; }
-
-.col-offset-7 {
-  margin-left: 58.33%; }
-
-.col-offset-8 {
-  margin-left: 66.66%; }
-
-.col-offset-9 {
-  margin-left: 75%; }
-
-.col-offset-10 {
-  margin-left: 83.33%; }
-
-.col-offset-11 {
-  margin-left: 91.66%; }
 
 /*------------------------------*/
 /* Navigation */
@@ -224,8 +184,6 @@ header {
 	background: linear-gradient(180deg, $black_color, #13305B, #499ADB);
 	position: relative;
 	.flex-row {
-		display: flex;
-		flex-wrap: wrap;
 		max-width: 90%;
 		margin: 0 auto;
 		position: absolute;
@@ -288,42 +246,36 @@ header {
 /* HOVER SKILLS */
 /*------------------------------*/
 
-/* Hover HTML */
+/* Hover general */
 
-.skills .flex-row .progress-container .image1:hover {
-	transform: scale(1.1);
-	transition: 1s;
-}
-.skills .flex-row .progress-container .image1:hover + .progress .html {
-	background-color: #F16529;
+@mixin hover-skills {
 	box-shadow: none;
 	color: $black-color;
 	transition: 1s;
 	width: 30%;
 	text-align: right;
 }
-.skills .flex-row .progress-container .image1:hover + .progress {
+.skills .flex-row .progress-container .image1:hover, .image2:hover {
+	transform: scale(1.1);
+	transition: 1s;
+}
+.skills .flex-row .progress-container .image-class:hover + .progress {
 	box-shadow: none;
 	transition: 1s;
+}
+
+/* Hover HTML */
+
+.skills .flex-row .progress-container .image1:hover + .progress .html {
+	background-color: #F16529;
+	@include hover-skills;
 }
 
 /* Hover CSS3 */
 
-.skills .flex-row .progress-container .image2:hover {
-	transform: scale(1.1);
-	transition: 1s;
-}
 .skills .flex-row .progress-container .image2:hover + .progress .css3 {
 	background-color: #369CD6;
-	box-shadow: none;
-	color: $black-color;
-	transition: 1s;
-	width: 30%;
-	text-align: right;
-}
-.skills .flex-row .progress-container .image2:hover + .progress {
-	box-shadow: none;
-	transition: 1s;
+	@include hover-skills;
 }
 
 /* Hover JS */
@@ -334,15 +286,8 @@ header {
 }
 .skills .flex-row .progress-container .image3:hover + .progress .js {
 	background-color: #F7DF1E;
-	box-shadow: none;
-	color: $black-color;
-	transition: 1s;
+	@include hover-skills;
 	width: 10%;
-	text-align: right;
-}
-.skills .flex-row .progress-container .image3:hover + .progress {
-	box-shadow: none;
-	transition: 1s;
 }
 
 /*------------------------------*/
@@ -403,9 +348,7 @@ header {
 				&:hover {
 					color: $white_color;
 					background-color: $black_color;
-					box-shadow: none;
-					transition: .6s;
-					transform: scale(1.1);
+					@extend img:hover;
 				}
 			}
 			.portfolio-btn {
@@ -512,9 +455,7 @@ header {
 			max-width: 1200px;
 			margin: 0 auto;
 			font-weight: bold;
-			display: flex;
 			flex-direction: row;
-			flex-wrap: wrap;
 			.player {
 				display: flex;
 				justify-content: flex-end;
@@ -529,33 +470,25 @@ header {
 				flex-grow: 2;
 			}
 			.computer {
-				display: flex;
+				@extend .player;
 				justify-content: flex-start;
-				flex-grow: 1;
 				:nth-child(2) {
 					margin: 0 0 10px 10px;
 				}
 			}
 			.playerChoice {
-				display: flex;
-				justify-content: flex-end;
-				flex-grow: 1;
+				@extend .player;
 			}
 			.computerChoice {
-				display: flex;
-				justify-content: flex-start;
-				flex-grow: 1;
+				@extend .computer;
 			}
 			.playerResult {
-				display: flex;
-				justify-content: flex-end;
-				flex-grow: 1;
+				@extend .player;
 				margin: 10px 0;
 			}
 			.computerResult {
-				display: flex;
+				@extend .player;
 				justify-content: flex-start;
-				flex-grow: 1;
 				margin: 10px 0;
 			}
 			.playerChoice, .computerChoice, .playerResult, .computerResult {
@@ -574,27 +507,13 @@ footer {
 	background-color: $black_color;
 	color: $white_color;
 	.footer-container {
-		display: flex;
-		flex-wrap: wrap;
 		margin: 0 auto;
 		justify-content: center;
 		max-width: 1200px;
 		height: 80px;
 		font-size: 15px;
 		font-weight: bold;
-		.copyright {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-grow: 1;
-		}
-		.contact, .phone {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-grow: 1;
-		}
-		.city {
+		.copyright, .contact, .phone, .city {
 			display: flex;
 			justify-content: center;
 			align-items: center;
