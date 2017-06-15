@@ -85,6 +85,9 @@ header {
 			font-size: 22px;
 			text-transform: uppercase;
 		}
+		label, input {
+			display: none;
+		}
 		ul {
 			display: flex;
 			justify-content: flex-end;
@@ -593,6 +596,59 @@ footer {
 		padding-bottom: 100px
 	}
 
+	/* Header */
+	/*------------------------------*/
+
+	header {
+		height: auto;
+		.menu {
+			display: inline-block;
+			width: 100%;
+			.portfolio {
+				display: inline-block;
+				height: 50px;
+				vertical-align: middle;
+				max-width: 100%;
+				margin: auto;
+			}
+			label {
+				display: inline-block;
+				float: right;
+				font-size: 30px;
+				cursor: pointer;
+				margin-right: 15px;
+			}
+			input {
+				display: none;
+			}
+			#menu-button:not(:checked) ~ul {
+				display: none;
+			}
+			#menu-button:checked ~ul {
+				display: block;
+				max-width: 100%;
+			}
+			ul {
+				float: center;
+				display: block;
+				text-align: center;
+				li {
+					display: block;
+					text-align: center;
+					height: 50px;
+					margin: 15px auto;
+				}
+			}
+		}
+	}
+
+	/* Jumbotron section */
+	/*------------------------------*/
+
+	.jumbotron {
+		max-height: 100%;
+	}
+
 	/* Skills section */
 	/*------------------------------*/
 
@@ -649,6 +705,15 @@ footer {
     .border {
 		padding-top: 100px;
 		padding-bottom: 100px
+	}
+
+	/* Header */
+	/*------------------------------*/
+
+	header .menu ul {
+		li {
+			width: 125px;
+		}
 	}
 
     /* Skills section */
