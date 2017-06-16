@@ -540,7 +540,20 @@ footer {
   /* Game section */
   /*------------------------------*/
   .game {
-    max-height: 100vh; }
+    height: 100%; }
+    .game h1 {
+      margin-bottom: 0;
+      font-size: 40px; }
+    .game .container-title {
+      margin: 20px auto; }
+      .game .container-title h1 {
+        display: block;
+        text-align: center; }
+      .game .container-title span {
+        display: inline-block;
+        text-align: center;
+        margin-top: 20px;
+        line-height: 40px; }
     .game .results .row {
       margin: 15px auto; }
       .game .results .row [class*="col-"] {
