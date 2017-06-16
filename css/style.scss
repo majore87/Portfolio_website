@@ -20,6 +20,7 @@ $css_blue: #369CD6;
 $js_yellow: #F7DF1E;
 $fire: #fa9600;
 $company: #313332;
+$progress-bar: #DDDDDD;
 
 /*------------------------------*/
 /* General Style */
@@ -148,7 +149,7 @@ header {
 		background-repeat: no-repeat;
 		postition: relative;
 		.text {
-			color: white;
+			color: $white_color;
 			font-size: 40px;
 			font-weight: bold;
 			position: absolute;
@@ -206,7 +207,7 @@ header {
 				}
 			}
 			.progress {
-				background-color: #DDDDDD;
+				background-color: $progress-bar;
 				box-sizing: border-box;
 				margin: 20px auto;
 				display: flex;
@@ -216,7 +217,7 @@ header {
 				width: 350px;
 				max-width: 100%;
 				box-shadow: 0 20px 30px 0 $black_color;
-				color: #DDDDDD;
+				color: $progress-bar;
 				.progress-bar {
 					width: 0.1%;
 					max-width: 100%;
@@ -267,14 +268,14 @@ header {
 /* Hover HTML */
 
 .skills .flex-row .progress-container .image1:hover + .progress .html {
-	background-color: #F16529;
+	background-color: $html_orange;
 	@include hover-skills;
 }
 
 /* Hover CSS3 */
 
 .skills .flex-row .progress-container .image2:hover + .progress .css3 {
-	background-color: #369CD6;
+	background-color: $css_blue;
 	@include hover-skills;
 }
 
@@ -285,7 +286,7 @@ header {
 	transition: 1s;
 }
 .skills .flex-row .progress-container .image3:hover + .progress .js {
-	background-color: #F7DF1E;
+	background-color: $js_yellow;
 	@include hover-skills;
 	width: 10%;
 }
@@ -398,7 +399,6 @@ header {
 }
 .game {
 	height: 100vh;
-	background-color: #e6e6e6;
 	margin: 0;
 	background-image: url('../images/girl_wall2.jpg');
 	background-position: center;
@@ -748,5 +748,4 @@ footer {
     .col-l-10 {flex: 83.333%;}
     .col-l-11 {flex: 91.667%;}
     .col-l-12 {flex: 100%;}
-
 }
