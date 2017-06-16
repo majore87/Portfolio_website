@@ -332,7 +332,7 @@ header {
   border: #14bd4c; }
 
 .game {
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   background-image: url("../images/girl_wall2.jpg");
   background-position: center;
@@ -515,6 +515,8 @@ footer {
   /*------------------------------*/
   .jumbotron {
     max-height: 100%; }
+    .jumbotron .particles .text {
+      font-size: 30px; }
 
   /* Skills section */
   /*------------------------------*/
