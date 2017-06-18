@@ -476,6 +476,7 @@ footer {
   header {
     height: auto; }
     header .menu {
+      display: inline-block;
       width: 100%;
       text-align: center; }
       header .menu .portfolio {
