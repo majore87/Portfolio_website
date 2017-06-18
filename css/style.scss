@@ -147,7 +147,7 @@ header {
 		background-size: cover;
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
-		postition: relative;
+		position: relative;
 		.text {
 			color: $white_color;
 			font-size: 40px;
@@ -181,7 +181,6 @@ header {
 .skills {
 	height: 100vh;
 	background-color: $white_color;
-	align-items: center;
 	background: linear-gradient(180deg, $black_color, #13305B, #499ADB);
 	position: relative;
 	.flex-row {
@@ -189,7 +188,7 @@ header {
 		margin: 0 auto;
 		position: absolute;
 		top: 50%;
-		margin-top: -150px;
+		margin-top: -270px;
 		left: 0;
 		right: 0;
 		.progress-container {
@@ -225,15 +224,15 @@ header {
 			}
 		}
 		.career-goal {
-			margin: 50px;
+			margin: 50px 50px 0 50px;
 			display: block;
 			p {
 				color: $white_color;
 				font-family: 'Mitr', sans-serif;
-				font-weight: semi-bold;
 				font-size: 30px;
 				text-align: center;
 				cursor: pointer;
+				margin: auto;
 				&:hover {
 					box-shadow: 0 0 20px 10px $section_grey;
 					transition: 1s;
@@ -560,6 +559,7 @@ footer {
 		.menu {
 			display: inline-block;
 			width: 100%;
+			text-align: center;
 			.portfolio {
 				display: inline-block;
 				height: 50px;
