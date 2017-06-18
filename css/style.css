@@ -502,7 +502,8 @@ footer {
       header .menu ul {
         float: center;
         display: block;
-        text-align: center; }
+        text-align: center;
+        padding: 0; }
         header .menu ul li {
           display: block;
           text-align: center;
