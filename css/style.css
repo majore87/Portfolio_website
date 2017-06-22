@@ -484,7 +484,8 @@ footer {
         height: 50px;
         max-width: 100%;
         margin: auto;
-        line-height: 50px; }
+        line-height: 50px;
+        margin-left: 25px; }
       header .menu label {
         display: inline-block;
         float: right;
