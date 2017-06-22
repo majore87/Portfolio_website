@@ -60,15 +60,15 @@ header {
       flex: 1;
       font-weight: bold;
       font-size: 22px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      height: 50px; }
     header .menu label, header .menu input {
       display: none; }
     header .menu ul {
       display: flex;
       justify-content: flex-end;
       list-style: none;
-      margin: 0;
-      height: 50px; }
+      margin: 0; }
       header .menu ul li {
         display: flex;
         align-items: center;
